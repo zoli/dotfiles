@@ -1,0 +1,9 @@
+<snippet>
+	<description>Test func</description>
+	<content><![CDATA[func Test${1:Func}(t *testing.T) {
+	${2}
+}
+]]></content>
+	<tabTrigger>testf</tabTrigger>
+	<scope>source.go</scope>
+</snippet>

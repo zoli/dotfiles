@@ -1,0 +1,38 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"All Autocomplete",
+		"Anaconda",
+		"Backbone.js",
+		"Blade Snippets",
+		"C++ Starting Kit",
+		"Clang Format",
+		"CMake",
+		"CTags",
+		"DocBlockr",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"GoSublime",
+		"jQuery",
+		"JsFormat",
+		"Laravel 4 Snippets",
+		"Laravel Blade Highlighter",
+		"Nodejs",
+		"PlainTasks",
+		"QML",
+		"SFTP",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-csslint",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-php",
+		"SublimeREPL",
+		"Theme - Soda",
+		"Vintageous",
+		"Zeal"
+	]
+}

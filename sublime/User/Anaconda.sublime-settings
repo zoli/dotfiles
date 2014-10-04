@@ -1,0 +1,11 @@
+{
+	"suppress_word_completions": true,
+    "suppress_explicit_completions": true,
+	"complete_parameters": true,
+	"display_signatures": true,
+	"pep8_ignore":
+    [
+        "W191",
+        "E501"
+    ]
+}

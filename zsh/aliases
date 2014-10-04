@@ -1,0 +1,36 @@
+alias ~='cd ~'
+alias ..='cd ..'
+alias w='cd ~/Projects/www'
+alias p='cd ~/Projects'
+alias ostovan='cd ~/.go/src/github.com/ostovan'
+alias zidoms='cd ~/.go/src/github.com/zidoms'
+alias lime='cd ~/.go/src/github.com/limetext/lime'
+alias dot='cd ~/.dotfiles/'
+alias dls='cd ~/Downloads'
+alias dp='cd ~/Dropbox'
+alias doc='cd ~/Documents'
+
+alias c='clear'
+alias s='sudo'
+alias apt-get='sudo apt-get'
+
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias v='vim'
+alias sv='sudo vim'
+alias gv='gvim'
+alias sgv='sudo gvim'
+
+alias git=hub
+alias gs='hub status -sb'
+alias ga='hub add'
+alias gb='hub branch'
+alias gg='hub commit -am'
+alias gc='hub commit -m'
+alias gd='hub diff'
+alias push='hub push origin master'
+alias pull='hub pull origin master'
+
+alias py='python'
+alias art='php artisan'

@@ -1,0 +1,32 @@
+{
+	"9o.hist./home/mohammad/.go/src/github.com/limetext/lime/frontend/qml":
+	[
+		"go run main.go",
+		"clear"
+	],
+	"9o.hist./home/mohammad/Lab":
+	[
+		"go run euler.go"
+	],
+	"9o.hist./home/mohammad/Projects/Lab":
+	[
+		"exut",
+		"exit",
+		"go build euler.go",
+		"go run euler.go",
+		"clear"
+	],
+	"9o.hist./home/mohammad/Projects/Lab/util/text":
+	[
+		"ls",
+		"clear",
+		"exit"
+	],
+	"9o.hist./home/mohammad/Projects/quarnster/util/container":
+	[
+		"help"
+	],
+	"ann": "a14.02.25-1",
+	"install_version": "r13.12.26-3",
+	"version": "r13.12.26-3"
+}

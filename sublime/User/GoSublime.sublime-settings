@@ -1,0 +1,10 @@
+{
+	"env":
+	{
+		"GOPATH": "$HOME/.go",
+		"GOROOT": "/usr/lib/go"
+	},
+	"autocomplete_tests": true,
+	"autocomplete_suggest_imports": true,
+	"autocomplete_builtins": true
+}

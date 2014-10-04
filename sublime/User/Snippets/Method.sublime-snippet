@@ -1,0 +1,9 @@
+<snippet>
+	<description>Method</description>
+	<content><![CDATA[func (${3:m} *${2:Method}) ${1:name}(${4}) ${5:error} {
+	${6}
+}
+]]></content>
+	<tabTrigger>funm</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
