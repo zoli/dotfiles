@@ -1,6 +1,5 @@
 alias ~='cd ~'
 alias ..='cd ..'
-alias w='cd ~/Projects/www'
 alias p='cd ~/Projects'
 alias ostovan='cd ~/.go/src/github.com/ostovan'
 alias zidoms='cd ~/.go/src/github.com/zidoms'
