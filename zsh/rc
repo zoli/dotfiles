@@ -44,7 +44,7 @@ source ~/.dotfiles/zsh/aliases
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(common-aliases archlinux colored-man cp git-extras laravel4 ssh-agent composer go python web-search git-prompt)
+plugins=(common-aliases archlinux colored-man cp git-extras git-prompt laravel4 ssh-agent sublime composer go python pip web-search node npm bower vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,3 +65,5 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent identities github/id_rsa
