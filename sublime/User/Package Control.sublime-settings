@@ -1,12 +1,15 @@
 {
 	"installed_packages":
 	[
+		"3024 Color Scheme",
 		"AdvancedNewFile",
 		"Alignment",
 		"All Autocomplete",
 		"Anaconda",
+		"AutoFileName",
 		"Backbone.js",
 		"Blade Snippets",
+		"C Improved",
 		"C++ Starting Kit",
 		"Clang Format",
 		"CMake",
@@ -25,6 +28,7 @@
 		"QML",
 		"SFTP",
 		"SideBarEnhancements",
+		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
 		"SublimeLinter-jshint",
