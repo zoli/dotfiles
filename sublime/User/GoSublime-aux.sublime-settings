@@ -2,7 +2,9 @@
 	"9o.hist./home/mohammad/.go/src/github.com/limetext/lime/frontend/qml":
 	[
 		"go run main.go",
-		"clear"
+		"clear",
+		"help",
+		"run"
 	],
 	"9o.hist./home/mohammad/Lab":
 	[
