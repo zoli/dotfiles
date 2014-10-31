@@ -67,3 +67,7 @@
 	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
 [cola]
 	fontdiff = Meslo LG M,11,-1,5,50,0,0,0,0,0
+[sendemail]
+	from = Mohammad Zolfaghari <zidom72@gmail.com>
+	smtpserver = smpt.googlemail.com
+	smtpuser = zidom72@gmail.com

@@ -1,10 +1,24 @@
 {
+	"9o.hist./home/mohammad/.go/src/github.com/limetext/lime/backend/watcher":
+	[
+		"go fmt",
+		"go fmt *"
+	],
 	"9o.hist./home/mohammad/.go/src/github.com/limetext/lime/frontend/qml":
 	[
 		"go run main.go",
 		"clear",
 		"help",
 		"run"
+	],
+	"9o.hist./home/mohammad/.go/src/github.com/zidoms/emru":
+	[
+		"go test",
+		"clear"
+	],
+	"9o.hist./home/mohammad/.go/src/github.com/zidoms/emru/frontend":
+	[
+		"go build"
 	],
 	"9o.hist./home/mohammad/Lab":
 	[
@@ -28,7 +42,7 @@
 	[
 		"help"
 	],
-	"ann": "a14.02.25-1",
+	"ann": "a14.03.28-1",
 	"install_version": "r13.12.26-3",
 	"version": "r13.12.26-3"
 }

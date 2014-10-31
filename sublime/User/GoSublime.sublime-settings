@@ -4,7 +4,10 @@
 		"GOPATH": "$HOME/.go",
 		"GOROOT": "/usr/lib/go"
 	},
+	"shell": ["/bin/zsh", "--login", "-c", "$CMD"],
+	"fmt_tab_width": 4,
 	"autocomplete_tests": true,
 	"autocomplete_suggest_imports": true,
-	"autocomplete_builtins": true
+	"autocomplete_builtins": true,
+	"use_named_imports": true
 }

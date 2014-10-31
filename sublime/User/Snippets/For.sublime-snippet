@@ -1,6 +1,6 @@
 <snippet>
 	<description>For range</description>
-	<content><![CDATA[for ${3:i}, ${2:item} := range ${1:items} {
+	<content><![CDATA[for ${3:i}, ${1:item} := range ${1:item}s {
 	${4:/* loop */}
 }
 ]]></content>
