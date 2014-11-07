@@ -1,4 +1,8 @@
 {
+	"9o.hist./home/mohammad/.go/src/github.com/limetext/lime/backend/watch/testdata":
+	[
+		"go run test.go"
+	],
 	"9o.hist./home/mohammad/.go/src/github.com/limetext/lime/backend/watcher":
 	[
 		"go fmt",

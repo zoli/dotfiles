@@ -1,7 +1,6 @@
 {
 	"installed_packages":
 	[
-		"AdvancedNewFile",
 		"Alignment",
 		"All Autocomplete",
 		"Anaconda",
@@ -38,7 +37,6 @@
 		"SublimeREPL",
 		"Tag",
 		"Theme - Soda",
-		"Vintageous",
-		"Zeal"
+		"Vintageous"
 	]
 }
