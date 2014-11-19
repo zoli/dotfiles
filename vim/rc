@@ -36,8 +36,8 @@ set laststatus=2
 
 set smartindent
 set noexpandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=8
+set shiftwidth=8
 
 set fileformats=unix,dos,mac    " Prefer Unix over Windows over OS 9 formats
 

@@ -1,4 +1,10 @@
 {
+	"9o.hist./home/mohammad/.go/src/github.com/limetext/lime/backend/watch":
+	[
+		"go run",
+		"go run action.go",
+		"go run main.go"
+	],
 	"9o.hist./home/mohammad/.go/src/github.com/limetext/lime/backend/watch/testdata":
 	[
 		"go run test.go"

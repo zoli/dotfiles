@@ -58,9 +58,5 @@ else
   export EDITOR='mvim'
 fi
 
-case "$TERM" in
-	xterm-color) color_prompt=yes;;
-esac
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

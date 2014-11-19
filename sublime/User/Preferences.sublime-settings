@@ -48,7 +48,7 @@
 	"matchBracketsBraces": true,
 	"matchBracketsSquare": true,
 	"soda_classic_tabs": true,
-	"tab_size": 4,
+	"tab_size": 8,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"trim_automatic_white_space": true,
