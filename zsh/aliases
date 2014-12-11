@@ -24,11 +24,11 @@ alias sgv='sudo gvim'
 alias git=hub
 alias gs='hub status -sb'
 alias ga='hub add'
-alias gb='hub branch'
 alias gg='hub commit -am'
 alias gm='hub commit -a'
 alias gc='hub commit -m'
 alias gd='hub diff'
+alias gl='hub lol'
 alias push='hub push origin master'
 alias pull='hub pull origin master'
 

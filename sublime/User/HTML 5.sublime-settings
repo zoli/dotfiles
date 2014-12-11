@@ -2,5 +2,6 @@
 	"extensions":
 	[
 		"html"
-	]
+	],
+	"tab_size": 4,
 }

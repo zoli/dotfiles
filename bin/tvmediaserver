@@ -1,9 +1,0 @@
-#!/bin/sh
-PLEXPATH="/opt/plexmediaserver"
-export LD_LIBRARY_PATH="${PLEXPATH}"
-export PLEX_MEDIA_SERVER_HOME="${PLEXPATH}"
-export PLEX_MEDIA_SERVER_MAX_PLUGIN_PROCS=6
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US.UTF-8"
-ulimit -s 3000
-/opt/plexmediaserver/Plex\ Media\ Server
