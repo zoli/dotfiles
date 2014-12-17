@@ -1,7 +1,6 @@
 {
 	"installed_packages":
 	[
-		"Alignment",
 		"All Autocomplete",
 		"Anaconda",
 		"Backbone.js",
@@ -19,7 +18,6 @@
 		"JsFormat",
 		"Laravel 4 Snippets",
 		"Laravel Blade Highlighter",
-		"Nodejs",
 		"PlainTasks",
 		"QML",
 		"Sass",
