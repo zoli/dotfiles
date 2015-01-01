@@ -1,5 +1,7 @@
 {
 	"color_scheme": "Packages/PlainTasks/tasks-monokai.hidden-tmTheme",
 	"tab_size": 4,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
 	"translate_tabs_to_spaces": false
 }

@@ -30,10 +30,7 @@
 	],
 	"folder_exclude_patterns":
 	[
-		".svn",
-		".git",
-		".hg",
-		"CVS"
+		".git"
 	],
 	"font_face": "Meslo LG M",
 	"font_size": 14,
