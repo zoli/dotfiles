@@ -1,6 +1,7 @@
 [global_config]
   title_transmit_bg_color = "#333333"
   tab_position = hidden
+  inactive_color_offset = 0.82
   suppress_multiple_term_dialog = True
 [keybindings]
   close_term = <Primary><Shift>w
@@ -9,7 +10,8 @@
     scrollbar_position = hidden
     palette = "#002b36:#f92672:#a6e22e:#fd971f:#66d9ef:#f92672:#2aa198:#93a1a1:#657b83:#f92672:#a6e22e:#fd971f:#66d9ef:#f92672:#2aa198:#fdf6e3"
     use_system_font = False
-    background_darkness = 0.9
+    background_darkness = 0.92
+    background_type = transparent
     active_encodings = ISO-8859-6, IBM864, UTF-8, ISO-8859-1
     foreground_color = "#fbfbfb"
     background_image = None
