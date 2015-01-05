@@ -72,5 +72,5 @@ autocmd FileType c,cpp autocmd BufWritePre <buffer> :%s/\s\+$//e
 "YCM
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
-imap ss <esc>a<Plug>snipMateNextOrTrigger
-smap ss <Plug>snipMateNextOrTrigger
+imap <S-S> <esc>a<Plug>snipMateNextOrTrigger
+smap <S-S> <Plug>snipMateNextOrTrigger
