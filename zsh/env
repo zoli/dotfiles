@@ -1,2 +1,2 @@
 export GOPATH=$HOME/Code/go
-export PATH=$PATH:$GOPATH/bin:$HOME/.gem/ruby/2.1.0/bin:$HOME/.dotfiles/bin
+export PATH=$PATH:$GOPATH/bin
