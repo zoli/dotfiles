@@ -40,12 +40,12 @@
 	[
 		"Vintage"
 	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"rulers":
 	[
 		80
 	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
 	"soda_classic_tabs": true,
 	"tab_size": 8,
 	"theme": "Soda Dark.sublime-theme",
