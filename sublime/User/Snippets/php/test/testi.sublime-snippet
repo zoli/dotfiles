@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * @covers ${2:class}::$1()
+ */
+public function test${1/(.*)/\u$1/}()
+{
+    \$this->markTestIncomplete('${0:Not yet implemented}');
+}
+]]></content>
+	<tabTrigger>testi</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+public function test${1}()
+{
+	${2:// assertions}
+}
+]]></content>
+	<tabTrigger>test</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
