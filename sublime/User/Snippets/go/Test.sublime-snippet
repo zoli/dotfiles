@@ -4,6 +4,6 @@
 	${2}
 }
 ]]></content>
-	<tabTrigger>testf</tabTrigger>
+	<tabTrigger>test</tabTrigger>
 	<scope>source.go</scope>
 </snippet>
