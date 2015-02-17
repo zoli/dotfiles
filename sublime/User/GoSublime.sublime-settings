@@ -5,7 +5,7 @@
 		"GOROOT": "/usr/lib/go"
 	},
 	"shell": ["/bin/zsh", "--login", "-c", "$CMD"],
-	"fmt_tab_width": 4,
+	"fmt_tab_width": 8,
 	"autocomplete_tests": true,
 	"autocomplete_suggest_imports": true,
 	"autocomplete_builtins": true,
