@@ -2,7 +2,7 @@
     name = Mohammad Zolfaghari
     email = zidom72@gmail.com
 [github]
-	user = ZiDoMs
+	user = zoli
 [alias]
     s = status
 	l = log --graph --abbrev-commit --date=relative
