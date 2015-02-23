@@ -18,6 +18,7 @@
     background_image = None
     icon_bell = False
     show_titlebar = False
+    cursor_shape = ibeam
     font = Meslo LG M 12
     background_color = "#222222"
     scrollback_infinite = True
@@ -30,5 +31,5 @@
     [[[window0]]]
       type = Window
       parent = ""
-      size = 810, 370
+      size = 910, 400
 [plugins]
