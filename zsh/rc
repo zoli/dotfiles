@@ -10,7 +10,7 @@ ZSH_THEME="amuse"
 # Example aliases
 source ~/.dotfiles/zsh/aliases
 
-plugins=(common-aliases archlinux colored-man cp github git-flow git-prompt laravel4 sublime composer go python pip npm systemd systemadmin docker vagrant)
+plugins=(common-aliases archlinux colored-man cp github git-flow git-prompt sublime go python pip npm systemd systemadmin docker vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
