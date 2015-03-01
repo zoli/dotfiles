@@ -15,17 +15,23 @@ font pango:Meslo LG M 9
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+focus_follows_mouse no
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
 bindsym $mod+x kill
 
 # start dmenu
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec i3-dmenu-desktop
+bindsym $mod+Shift+d exec dmenu_run 
 
 # change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -43,7 +49,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-bindsym $mod+h split h
+bindsym $mod+z split h
 bindsym $mod+v split v
 
 bindsym $mod+f fullscreen
@@ -95,7 +101,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+e exec i3-exit 
+bindsym $mod+Shift+e exec i3-exit
 
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -118,6 +124,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	mode hide
         status_command i3status
+	position top
 }
+
+# Startup
+exec --no-startup-id feh --bg-fill /home/mohammad/Pictures/linux_terminal_wallpaper.png

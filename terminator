@@ -13,7 +13,7 @@
     use_system_font = False
     background_darkness = 0.92
     background_type = transparent
-    active_encodings = ISO-8859-6, IBM864, UTF-8, ISO-8859-1
+    active_encodings = UTF-8
     foreground_color = "#fbfbfb"
     background_image = None
     icon_bell = False
