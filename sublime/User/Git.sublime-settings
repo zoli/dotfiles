@@ -1,4 +1,7 @@
 {
 	"git_flow_command": "/bin/git-flow",
-	"statusbar_status_symbols" : {"modified": "≠", "added": "✚", "deleted": "✖", "untracked": "?", "conflicts": "‼", "renamed":"R", "copied":"C", "clean": "✔", "separator": " "}
+	"diff_panel": true,
+	"flow": true,
+	"statusbar_branch": false,
+	"statusbar_status": false,
 }
