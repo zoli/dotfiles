@@ -11,10 +11,10 @@ set $right l
 
 set $wsp1 1: www
 set $wsp2 2: code
-set $wsp3 3: code
+set $wsp3 3: term
 set $wsp4 4: code
-set $wsp5 5: reading
-set $wsp6 6
+set $wsp5 5: term
+set $wsp6 6: reading
 set $wsp7 7: video
 set $wsp8 8: video
 set $wsp9 9: msg
@@ -97,7 +97,7 @@ bindsym $mod+6 workspace $wsp6
 bindsym $mod+7 workspace $wsp7
 bindsym $mod+8 workspace $wsp8
 bindsym $mod+9 workspace $wsp9
-bindsym $mod+0 workspace $wsp10
+bindsym $mod+0 workspace $wsp0
 
 # move workspaces
 bindsym $mod+Control+$left move workspace to output left
@@ -114,16 +114,16 @@ bindsym Control+Mod1+Right workspace next
 bindsym Control+Mod1+Left workspace prev
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $wsp1
-bindsym $mod+Shift+2 move container to workspace $wsp2
-bindsym $mod+Shift+3 move container to workspace $wsp3
-bindsym $mod+Shift+4 move container to workspace $wsp4
-bindsym $mod+Shift+5 move container to workspace $wsp5
-bindsym $mod+Shift+6 move container to workspace $wsp6
-bindsym $mod+Shift+7 move container to workspace $wsp7
-bindsym $mod+Shift+8 move container to workspace $wsp8
-bindsym $mod+Shift+9 move container to workspace $wsp9
-bindsym $mod+Shift+0 move container to workspace $wsp10
+bindsym $mod+Shift+1 move container to workspace $wsp1, workspace $wsp1
+bindsym $mod+Shift+2 move container to workspace $wsp2, workspace $wsp2
+bindsym $mod+Shift+3 move container to workspace $wsp3, workspace $wsp3
+bindsym $mod+Shift+4 move container to workspace $wsp4, workspace $wsp4
+bindsym $mod+Shift+5 move container to workspace $wsp5, workspace $wsp5
+bindsym $mod+Shift+6 move container to workspace $wsp6, workspace $wsp6
+bindsym $mod+Shift+7 move container to workspace $wsp7, workspace $wsp7
+bindsym $mod+Shift+8 move container to workspace $wsp8, workspace $wsp8
+bindsym $mod+Shift+9 move container to workspace $wsp9, workspace $wsp9
+bindsym $mod+Shift+0 move container to workspace $wsp10, workspace $wsp10
 
 mode "resize" {
 	# These bindings trigger as soon as you enter the resize mode
