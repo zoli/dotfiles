@@ -1,7 +1,3 @@
-# i3 config file (v4)
-#
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
 set $mod Mod4
 
 set $left h
@@ -14,14 +10,12 @@ set $wsp2 2: code
 set $wsp3 3: term
 set $wsp4 4: code
 set $wsp5 5: term
-set $wsp6 6: reading
-set $wsp7 7: video
+set $wsp6 6: game
+set $wsp7 7: reading
 set $wsp8 8: video
 set $wsp9 9: msg
-set $wsp0 10: game
+set $wsp0 10: etc
 
-# default font:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:Meslo LG M 9
 
 set $blue #005588
@@ -35,17 +29,13 @@ client.unfocused          $gray2   $gray2   #FFFFFF   #000000
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-# kill focused window
 bindsym $mod+x kill
 
-# start dmenu
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'Meslo LG M-9:bold' -nb '#333333' -nf '#FFFFFF' -sb '#484848' -sf '#FFFFFF' -y '2' -h '19'"
 bindsym $mod+Shift+d exec dmenu_run
 
-# change focus
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
@@ -56,7 +46,6 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
@@ -67,6 +56,9 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
 bindsym $mod+z split h
 bindsym $mod+v split v
 
@@ -75,19 +67,14 @@ bindsym $mod+f fullscreen
 bindsym $mod+t layout tabbed
 bindsym $mod+s layout toggle split
 
-# toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# focus the parent container
 bindsym $mod+p focus parent
 
-# focus the child container
 bindsym $mod+c focus child
 
-# switch to workspace
 bindsym $mod+1 workspace $wsp1
 bindsym $mod+2 workspace $wsp2
 bindsym $mod+3 workspace $wsp3
@@ -99,7 +86,6 @@ bindsym $mod+8 workspace $wsp8
 bindsym $mod+9 workspace $wsp9
 bindsym $mod+0 workspace $wsp0
 
-# move workspaces
 bindsym $mod+Control+$left move workspace to output left
 bindsym $mod+Control+$down move workspace to output down
 bindsym $mod+Control+$up move workspace to output up
@@ -113,7 +99,6 @@ bindsym $mod+Control+Right move workspace to output right
 bindsym Control+Mod1+Right workspace next
 bindsym Control+Mod1+Left workspace prev
 
-# move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $wsp1, workspace $wsp1
 bindsym $mod+Shift+2 move container to workspace $wsp2, workspace $wsp2
 bindsym $mod+Shift+3 move container to workspace $wsp3, workspace $wsp3
@@ -123,10 +108,9 @@ bindsym $mod+Shift+6 move container to workspace $wsp6, workspace $wsp6
 bindsym $mod+Shift+7 move container to workspace $wsp7, workspace $wsp7
 bindsym $mod+Shift+8 move container to workspace $wsp8, workspace $wsp8
 bindsym $mod+Shift+9 move container to workspace $wsp9, workspace $wsp9
-bindsym $mod+Shift+0 move container to workspace $wsp10, workspace $wsp10
+bindsym $mod+Shift+0 move container to workspace $wsp0, workspace $wsp0
 
 mode "resize" {
-	# These bindings trigger as soon as you enter the resize mode
 	bindsym $left resize shrink width 10 px or 5 ppt
 	bindsym $down resize grow height 10 px or 5 ppt
 	bindsym $up resize shrink height 10 px or 5 ppt
@@ -137,7 +121,6 @@ mode "resize" {
 	bindsym Up resize shrink height 10 px or 5 ppt
 	bindsym Right resize grow width 10 px or 5 ppt
 
-	# back to normal: Enter or Escape
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
@@ -156,7 +139,6 @@ mode "$mode_system" {
 	bindsym r restart, mode "default"
 	bindsym e exec i3-exit, mode "default"
 
-	# back to normal: Enter or Escape
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
@@ -165,17 +147,21 @@ bindsym $mod+Pause mode "$mode_system"
 bar {
 	position top
 	status_command $HOME/.i3/conky-i3bar
+	font pango:Meslo LG M Bold 9
 	colors {
 		statusline #AAAAAA
 		background #333333
-		focused_workspace $gray2 $gray2 #FFFFFF
-		inactive_workspace $gray1 $gray1 #AAAAAA
+
+		focused_workspace  $gray1 $gray1 #FFFFFF
+		inactive_workspace $gray2 $gray2 #AAAAAA
+		urgent_workspace   $gray2 $gray2 #c7a551
 	}
 }
 
 for_window [class="Nautilus"] floating enable
 for_window [class="bomi"] floating enable
 for_window [class="Vlc"] floating enable
+for_window [class="Zeal"] floating enable
 
 # Startup
 exec --no-startup-id feh --randomize --bg-fill /home/mohammad/Pictures/wallpaper/*
