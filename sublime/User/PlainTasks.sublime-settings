@@ -4,5 +4,14 @@
 	"tab_size": 4,
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
-	"translate_tabs_to_spaces": false
+	"translate_tabs_to_spaces": false,
+	"extensions":
+	[
+		"TODO",
+		"todo",
+		"todolist",
+		"taskpaper",
+		"tasks",
+		"IDEA"
+	]
 }

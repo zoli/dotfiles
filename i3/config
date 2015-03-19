@@ -7,14 +7,14 @@ set $right l
 
 set $wsp1 1: www
 set $wsp2 2: code
-set $wsp3 3: term
-set $wsp4 4: code
-set $wsp5 5: term
-set $wsp6 6: game
-set $wsp7 7: reading
-set $wsp8 8: video
-set $wsp9 9: msg
-set $wsp0 10: etc
+set $wsp3 3
+set $wsp4 4
+set $wsp5 5
+set $wsp6 6
+set $wsp7 7
+set $wsp8 8
+set $wsp9 9: reading
+set $wsp0 10: video
 
 font pango:Meslo LG M 9
 
@@ -166,3 +166,4 @@ for_window [class="Zeal"] floating enable
 # Startup
 exec --no-startup-id feh --randomize --bg-fill /home/mohammad/Pictures/wallpaper/*
 exec --no-startup-id xss-lock -- i3exit lock
+exec --no-startup-id xset s off
