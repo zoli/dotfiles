@@ -1,10 +1,5 @@
-# Path to your oh-my-zsh configuration.
 export ZSH=~/.dotfiles/zsh/oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="amuse"
 
 # Example aliases
@@ -15,7 +10,6 @@ plugins=(common-aliases archlinux colored-man cp github git-flow git-prompt subl
 source $ZSH/oh-my-zsh.sh
 
 source ~/.dotfiles/zsh/env
-# export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -30,5 +24,5 @@ else
 	export TERM='xterm-color'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCK

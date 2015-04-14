@@ -47,6 +47,10 @@
 		80
 	],
 	"soda_classic_tabs": true,
+	"sublimeclang_options":
+	[
+		"-xc++"
+	],
 	"tab_size": 8,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": false,

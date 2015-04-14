@@ -30,6 +30,10 @@
 	[
 		"go build"
 	],
+	"9o.hist./home/mohammad/Code/go/src/github.com/zoli/emru/emru":
+	[
+		"go test"
+	],
 	"9o.hist./home/mohammad/Lab":
 	[
 		"go run euler.go"

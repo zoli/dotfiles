@@ -11,10 +11,10 @@ set $wsp3 3
 set $wsp4 4
 set $wsp5 5
 set $wsp6 6
-set $wsp7 7
-set $wsp8 8
-set $wsp9 9: reading
-set $wsp0 10: video
+set $wsp7 7: game
+set $wsp8 8: read
+set $wsp9 9: listen
+set $wsp0 10: watch
 
 font pango:Meslo LG M 9
 
@@ -159,11 +159,14 @@ bar {
 }
 
 for_window [class="Nautilus"] floating enable
-for_window [class="bomi"] floating enable
-for_window [class="Vlc"] floating enable
 for_window [class="Zeal"] floating enable
+for_window [class="Viber"] floating enable
+for_window [class="Telegram"] floating enable
 
 # Startup
 exec --no-startup-id feh --randomize --bg-fill /home/mohammad/Pictures/wallpaper/*
 exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id xset s off
+exec --no-startup-id nm-applet
+
+exec --no-startup-id i3-msg 'workspace $wsp1; exec /usr/bin/chromium'
