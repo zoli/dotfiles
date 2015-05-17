@@ -1,15 +1,22 @@
-set folder = imaps://imap.gmail.com
-set my_name = "Mohammad Zolfaghari"
-set imap_user = zidom72@gmail.com
-set spoolfile = +INBOX
-set imap_check_subscribed
+set from = "zidom72@gmail.com"
+set realname = "Mohammad Zolfaghari"
 
-set header_cache = ~/.cache/mutt
+set folder = "imaps://imap.gmail.com:993"
+set imap_user = "zidom72@gmail.com"
+set smtp_url = "smtp://zidom72@smtp.gmail.com:587/"
+set spoolfile = "imaps://imap.gmail.com/INBOX"
+set record = "imaps://imap.gmail.com/[Gmail]/Sent Mail"
+set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
+set trash = "imaps://imap.gmail.com/[Gmail]/Trash"
+
+set imap_check_subscribed
+set header_cache = "~/.cache/mutt"
 set message_cachedir = "~/.cache/mutt"
 
 set postponed = +[Gmail]/Drafts
 set imap_keepalive = 300
 set mail_check = 120
+set copy = no
 
 bind index G imap-fetch-mail
 
