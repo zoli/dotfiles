@@ -7,7 +7,6 @@ set smtp_url = "smtp://zidom72@smtp.gmail.com:587/"
 set spoolfile = "imaps://imap.gmail.com/INBOX"
 set record = "imaps://imap.gmail.com/[Gmail]/Sent Mail"
 set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
-set trash = "imaps://imap.gmail.com/[Gmail]/Trash"
 
 set imap_check_subscribed
 set header_cache = "~/.cache/mutt"

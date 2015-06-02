@@ -11,7 +11,7 @@ set $wsp3 3: term
 set $wsp4 4
 set $wsp5 5
 set $wsp6 6
-set $wsp7 7: game
+set $wsp7 7
 set $wsp8 8: read
 set $wsp9 9: listen
 set $wsp0 10: watch

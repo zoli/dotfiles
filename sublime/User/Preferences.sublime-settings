@@ -4,6 +4,7 @@
 	"color_scheme": "Packages/User/Monokai Soda (SL).tmTheme",
 	"detect_indentation": true,
 	"ensure_newline_at_eof_on_save": true,
+	"overlay_scroll_bars": "enabled",
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -37,7 +38,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"completion"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
@@ -46,10 +48,6 @@
 		80
 	],
 	"soda_classic_tabs": true,
-	"sublimeclang_options":
-	[
-		"-xc++"
-	],
 	"tab_size": 8,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": false,
