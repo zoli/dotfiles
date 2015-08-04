@@ -170,4 +170,4 @@ exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id xset s off
 exec --no-startup-id nm-applet
 
-exec --no-startup-id i3-msg 'workspace $wsp1; exec /usr/bin/chromium'
+exec --no-startup-id i3-msg 'workspace $wsp1; exec google-chrome-stable'

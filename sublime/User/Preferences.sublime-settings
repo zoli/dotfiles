@@ -1,10 +1,10 @@
 {
+	"auto_complete_selector": "source, text",
 	"auto_indent": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/Monokai Soda (SL).tmTheme",
 	"detect_indentation": true,
 	"ensure_newline_at_eof_on_save": true,
-	"overlay_scroll_bars": "enabled",
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -43,6 +43,7 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
+	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
 		80
