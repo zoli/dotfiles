@@ -1,0 +1,15 @@
+fg_color = #fbfbfb
+bg_color = #222222
+scrollbar_mode = none
+borderless = true
+fontsize = 16
+use_transbg = true
+alpha = 237
+fade_ratio = 80
+blink_cursor = true
+termtype = xterm-256color
+working_directory = ~
+static_backscroll_mode = true
+exit_backscroll_by_pty = false
+encoding = utf8
+use_variable_column_width = true

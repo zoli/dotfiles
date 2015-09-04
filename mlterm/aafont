@@ -1,0 +1,7 @@
+DEFAULT = Meslo LG M
+
+U+0600-08FF = DejaVu Sans Mono
+
+U+2600-26FF = Segoe UI Symbol
+U+1F300-1F5FF = Segoe UI Symbol
+U+1F680-1F6FF = Segoe UI Symbol
