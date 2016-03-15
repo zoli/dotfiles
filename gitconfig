@@ -1,16 +1,16 @@
 [user]
-    name = Mohammad Zolfaghari
-    email = zidom72@gmail.com
+	name = Mohammad Zolfaghari
+	email = zidom72@gmail.com
 [github]
 	user = zoli
 [alias]
-    s = status
+	s = status
 	l = log --graph --abbrev-commit --date=relative
 	ld = log -p
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    go = checkout
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	go = checkout
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix

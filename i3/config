@@ -136,7 +136,6 @@ bar {
 
 for_window [class="Nautilus"] floating enable
 for_window [class="Zeal"] floating enable
-for_window [class="Viber"] floating enable
 for_window [class="Telegram"] floating enable
 
 # Startup
@@ -145,4 +144,4 @@ exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id xset s off
 exec --no-startup-id nm-applet
 
-exec --no-startup-id i3-msg 'workspace $wsp1; exec google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace $wsp1; exec chromium'
