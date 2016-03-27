@@ -139,7 +139,7 @@ for_window [class="Zeal"] floating enable
 for_window [class="Telegram"] floating enable
 
 # Startup
-exec --no-startup-id feh --randomize --bg-fill /home/mohammad/Pictures/wallpaper/*
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id xset s off
 exec --no-startup-id nm-applet
