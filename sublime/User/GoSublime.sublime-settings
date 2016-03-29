@@ -1,11 +1,7 @@
 {
-	"env":
-	{
-		"GOPATH": "$HOME/Code/go",
-		"GOROOT": "/usr/lib/go"
-	},
 	"shell": ["/bin/zsh", "--login", "-c", "$CMD"],
 	"autocomplete_suggest_imports": true,
 	"autocomplete_builtins": true,
-	"use_named_imports": true
+	"use_named_imports": true,
+	"fmt_cmd": ["goimports"],
 }
