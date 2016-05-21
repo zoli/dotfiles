@@ -4,4 +4,5 @@
 	"autocomplete_builtins": true,
 	"use_named_imports": true,
 	"fmt_cmd": ["goimports"],
+	"ipc_timeout": 4,
 }

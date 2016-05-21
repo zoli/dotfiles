@@ -1,6 +1,6 @@
 {
 	"always_show_minimap_viewport": true,
-	"auto_complete_selector": "source, text",
+	"auto_complete_selector": "source",
 	"auto_indent": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/Monokai Soda (SL).tmTheme",

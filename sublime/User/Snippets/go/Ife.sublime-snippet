@@ -1,7 +1,7 @@
 <snippet>
 	<description>If err</description>
 	<content><![CDATA[if err != nil {
-	${1:return err}
+	${1:return ${2:err}}
 }
 ]]></content>
 	<tabTrigger>ife</tabTrigger>

@@ -24,8 +24,6 @@ client.unfocused          $gray2   $gray2   #FFFFFF   #000000
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-workspace_auto_back_and_forth yes
-
 bindsym $mod+Return exec mlterm
 bindsym $mod+e exec nautilus
 
@@ -56,8 +54,6 @@ bindsym $mod+t layout tabbed
 bindsym $mod+s layout toggle split
 
 bindsym $mod+Shift+space floating toggle
-
-bindsym $mod+space focus mode_toggle
 
 bindsym $mod+p focus parent
 
@@ -138,15 +134,15 @@ bar {
 
 for_window [class="Nautilus"] floating enable
 for_window [class="Zeal"] floating enable
-for_window [class="Telegram"] floating enable
+for_window [class="telegram-desktop"] floating enable
 for_window [title="Wunderlist"] floating enable
 for_window [window_role="pop-up"] floating enable
-for_window [class="chromium"] border normal 0
+for_window [title="Chromium"] border normal 0
 for_window [class="mlterm"] border pixel 1
 for_window [title="Sublime Text"] border none
 for_window [title="Clementine"] border none
 
-assign [class="chromium"] 1: www
+assign [title="Chromium"] 1: www
 assign [title="Sublime Text"] 2: code
 assign [class="mlterm"] 3: term
 assign [title="Clementine"] 9: listen
@@ -156,5 +152,7 @@ exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id xset s off
 exec --no-startup-id nm-applet
+exec --no-startup-id volumeicon
+
 
 exec --no-startup-id i3-msg 'workspace $wsp1; exec chromium'

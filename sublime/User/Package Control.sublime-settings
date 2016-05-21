@@ -13,7 +13,6 @@
 		"Emmet",
 		"Git",
 		"GitGutter",
-		"Golang Build",
 		"GoSublime",
 		"HTML5",
 		"jQuery",
@@ -23,7 +22,6 @@
 		"Package Control",
 		"PlainTasks",
 		"QML",
-		"Qt Completions for C++",
 		"Sass",
 		"SFTP",
 		"SideBarEnhancements",
@@ -32,9 +30,7 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
-		"Sublimerge Pro",
 		"Tag",
-		"Theme - Soda",
 		"Vintageous"
 	]
 }
