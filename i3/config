@@ -11,6 +11,17 @@ set $wsp8 8: read
 set $wsp9 9: listen
 set $wsp0 10: watch
 
+bindsym $mod+1 workspace $wsp1
+bindsym $mod+2 workspace $wsp2
+bindsym $mod+3 workspace $wsp3
+bindsym $mod+4 workspace $wsp4
+bindsym $mod+5 workspace $wsp5
+bindsym $mod+6 workspace $wsp6
+bindsym $mod+7 workspace $wsp7
+bindsym $mod+8 workspace $wsp8
+bindsym $mod+9 workspace $wsp9
+bindsym $mod+0 workspace $wsp0
+
 font pango:Meslo LG M 9
 
 set $blue #005588
@@ -29,8 +40,8 @@ bindsym $mod+e exec nautilus
 
 bindsym $mod+x kill
 
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'Meslo LG M-9:bold' -nb '#333333' -nf '#FFFFFF' -sb '#484848' -sf '#FFFFFF' -y '2' -h '19'"
-bindsym $mod+Shift+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -fuzzy -dmenu -p 'run:' -font 'Meslo LG M bold 12'"
+bindsym $mod+Tab exec --no-startup-id rofi -show window -font 'Meslo LG M bold 12'
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -56,19 +67,7 @@ bindsym $mod+s layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 bindsym $mod+p focus parent
-
 bindsym $mod+c focus child
-
-bindsym $mod+1 workspace $wsp1
-bindsym $mod+2 workspace $wsp2
-bindsym $mod+3 workspace $wsp3
-bindsym $mod+4 workspace $wsp4
-bindsym $mod+5 workspace $wsp5
-bindsym $mod+6 workspace $wsp6
-bindsym $mod+7 workspace $wsp7
-bindsym $mod+8 workspace $wsp8
-bindsym $mod+9 workspace $wsp9
-bindsym $mod+0 workspace $wsp0
 
 bindsym $mod+Control+Left move workspace to output left
 bindsym $mod+Control+Down move workspace to output down
@@ -132,13 +131,14 @@ bar {
 	}
 }
 
+for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="telegram-desktop"] floating enable
-for_window [title="Wunderlist"] floating enable
+for_window [title="Wunderlist$"] floating enable
+for_window [title="Wunderlist$"] move to scratchpad
 for_window [window_role="pop-up"] floating enable
 for_window [title="Chromium"] border normal 0
-for_window [class="mlterm"] border pixel 1
 for_window [title="Sublime Text"] border none
 for_window [title="Clementine"] border none
 
