@@ -40,7 +40,7 @@ bindsym $mod+e exec nautilus
 
 bindsym $mod+x kill
 
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -fuzzy -dmenu -p 'run:' -font 'Meslo LG M bold 12'"
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -i -dmenu -p 'run:' -font 'Meslo LG M bold 12'"
 bindsym $mod+Tab exec --no-startup-id rofi -show window -font 'Meslo LG M bold 12'
 
 bindsym $mod+Left focus left
