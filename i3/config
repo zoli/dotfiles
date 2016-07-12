@@ -22,7 +22,7 @@ bindsym $mod+8 workspace $wsp8
 bindsym $mod+9 workspace $wsp9
 bindsym $mod+0 workspace $wsp0
 
-font pango:Meslo LG M 9
+font pango:Consolas 10
 
 set $blue #005588
 set $gray1 #484848

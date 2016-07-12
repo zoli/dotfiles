@@ -34,8 +34,8 @@
 		".git",
 		".github"
 	],
-	"font_face": "Meslo LG M",
-	"font_size": 14,
+	"font_face": "Consolas",
+	"font_size": 15,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -46,8 +46,8 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"line_padding_bottom": 5,
+	"line_padding_top": 5,
 	"material_theme_compact_sidebar": true,
 	"material_theme_contrast_mode": true,
 	"material_theme_small_statusbar": true,
