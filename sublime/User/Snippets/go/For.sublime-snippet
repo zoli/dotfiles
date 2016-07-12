@@ -1,7 +1,7 @@
 <snippet>
 	<description>For range</description>
-	<content><![CDATA[for ${3:i}, ${1:item} := range ${1:item}s {
-	${4:/* loop */}
+	<content><![CDATA[for ${5:i}, ${4:${1:item}} := range ${2:${1:item}s} {
+	${6:/* loop */}
 }
 ]]></content>
 	<tabTrigger>for</tabTrigger>
