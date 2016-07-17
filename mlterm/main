@@ -14,3 +14,6 @@ exit_backscroll_by_pty = false
 encoding = utf8
 use_variable_column_width = true
 logsize = unlimited
+line_space = 8
+tabsize = 8
+

@@ -3,7 +3,7 @@ set $mod Mod4
 set $wsp1 1: www
 set $wsp2 2: code
 set $wsp3 3: term
-set $wsp4 4: misc
+set $wsp4 4
 set $wsp5 5
 set $wsp6 6
 set $wsp7 7
@@ -40,8 +40,8 @@ bindsym $mod+e exec nautilus
 
 bindsym $mod+x kill
 
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -i -dmenu -p 'run:' -font 'Meslo LG M bold 12'"
-bindsym $mod+Tab exec --no-startup-id rofi -show window -font 'Meslo LG M bold 12'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -i -dmenu -p 'run:' -font 'Consolas 13'"
+bindsym $mod+Tab exec --no-startup-id rofi -show window -font 'Consolas 13'
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -122,7 +122,7 @@ mode "$mode_system" {
 bar {
 	position top
 	status_command $HOME/.i3/conky-i3bar
-	font pango:Meslo LG M Bold 9
+	font pango:Consolas bold 11
 	colors {
 		statusline #AAAAAA
 		background #333333

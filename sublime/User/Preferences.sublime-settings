@@ -3,6 +3,8 @@
 	"auto_complete_selector": "source",
 	"auto_indent": true,
 	"bold_folder_labels": true,
+	"caret_extra_bottom": 3,
+	"caret_extra_top": 3,
 	"color_scheme": "Packages/User/Monokai Soda (SL).tmTheme",
 	"detect_indentation": true,
 	"ensure_newline_at_eof_on_save": true,

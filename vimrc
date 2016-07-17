@@ -54,7 +54,7 @@ let g:airline_theme='molokai'
 let g:molokai_original=1
 
 " No toolbars, menu or scrollbars in the GUI
-set guifont=Consolas 15
+set guifont=Consolas\ 15
 set clipboard+=unnamed
 
 autocmd FileType c,cpp autocmd BufWritePre <buffer> :%s/\s\+$//e
