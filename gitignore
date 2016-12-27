@@ -1,5 +1,3 @@
-# Created by http://www.gitignore.io
-
 ### C ###
 # Object files
 *.o
@@ -25,7 +23,6 @@
 *.x86_64
 *.hex
 
-
 ### C++ ###
 # Compiled Object files
 *.slo
@@ -44,7 +41,6 @@
 *.a
 *.lib
 
-
 ### Go ###
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.o
@@ -58,17 +54,13 @@ _test
 # Architecture specific extensions/prefixes
 *.[568vq]
 [568vq].out
-
 *.cgo1.go
 *.cgo2.c
 _cgo_defun.c
 _cgo_gotypes.go
 _cgo_export.*
-
 _testmain.go
-
 *.test
-
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -95,15 +87,9 @@ htmlcov/
 nosetests.xml
 coverage.xml
 
-
 ### SublimeText ###
 # workspace files are user-specific
 *.sublime-workspace
-
-# project files should be checked into the repository, unless a significant
-# proportion of contributors will probably not be using SublimeText
-*.sublime-project
-
 
 ### vim ###
 [._]*.s[a-w][a-z]
@@ -113,7 +99,6 @@ Session.vim
 .netrwhist
 *~
 
-
 ### Laravel ###
 bootstrap/compiled.php
 .env.local.php
@@ -121,9 +106,6 @@ bootstrap/compiled.php
 
 ### Composer ###
 vendor/
-
-# User
-*.tasks
 
 ### Node ###
 # Logs
@@ -146,9 +128,11 @@ coverage
 cache/
 
 # Dependency directory
-# Commenting this out is preferred by some people, see
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# User
+TASKS
+*.sublime-project

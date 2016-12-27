@@ -136,7 +136,7 @@ bar {
 for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable
 for_window [class="Zeal"] floating enable
-for_window [class="telegram-desktop"] floating enable
+for_window [class="Telegram"] floating enable
 for_window [title="Wunderlist$"] floating enable
 for_window [title="Wunderlist$"] move to scratchpad
 for_window [window_role="pop-up"] floating enable
@@ -144,9 +144,7 @@ for_window [title="Chromium"] border normal 0
 for_window [title="Sublime Text"] border none
 for_window [title="Clementine"] border none
 
-assign [title="Chromium"] 1: www
 assign [title="Sublime Text"] 2: code
-assign [class="mlterm"] 3: term
 assign [title="Clementine"] 9: listen
 
 # Startup
@@ -155,9 +153,7 @@ exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id xset s off
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
+exec --no-startup-id blueman-applet
 
-
-exec --no-startup-id i3-msg 'workspace $wsp1; exec chromium'
 exec --no-startup-id i3-msg 'exec telegram-desktop'
 exec --no-startup-id i3-msg 'exec clementine'
-exec --no-startup-id i3-msg 'exec wundertray'

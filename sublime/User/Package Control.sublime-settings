@@ -6,8 +6,6 @@
 	"installed_packages":
 	[
 		"Blade Snippets",
-		"C Improved",
-		"C++ Completions",
 		"CMake",
 		"DocBlockr",
 		"Emmet",
