@@ -3,5 +3,4 @@
 	{ "keys": ["ctrl+n"], "command": "new_window" },
 	{ "keys": ["ctrl+tab"], "command": "next_view" },
 	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-	{ "keys": ["ctrl+super+p"], "command": "show_scope_name" },
 ]

@@ -5,15 +5,11 @@
 	],
 	"installed_packages":
 	[
-		"Blade Snippets",
-		"CMake",
 		"DocBlockr",
 		"Emmet",
 		"Git",
 		"GitGutter",
 		"GoSublime",
-		"HTML5",
-		"jQuery",
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
 		"Material Theme",
@@ -23,12 +19,12 @@
 		"Sass",
 		"SFTP",
 		"SideBarEnhancements",
+		"Six",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
-		"Tag",
-		"Vintageous"
+		"TypeScript"
 	]
 }

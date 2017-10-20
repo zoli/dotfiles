@@ -1,7 +1,7 @@
 set $mod Mod4
 
 set $wsp1 1: www
-set $wsp2 2: code
+set $wsp2 2
 set $wsp3 3: term
 set $wsp4 4
 set $wsp5 5
@@ -40,7 +40,7 @@ bindsym $mod+e exec nautilus
 
 bindsym $mod+x kill
 
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -i -dmenu -p 'run:' -font 'Consolas 13'"
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -i -dmenu -p '🚀 ' -font 'Consolas 13'"
 bindsym $mod+Tab exec --no-startup-id rofi -show window -font 'Consolas 13'
 
 bindsym $mod+Left focus left
@@ -92,10 +92,10 @@ bindsym Print exec "scrot ~/Pictures/Screenshot%Y-%m-%d%H:%M:%S.png"
 
 bindsym $mod+r mode "resize"
 mode "resize" {
-	bindsym Left resize shrink width 10 px or 5 ppt
-	bindsym Down resize grow height 10 px or 5 ppt
-	bindsym Up resize shrink height 10 px or 5 ppt
-	bindsym Right resize grow width 10 px or 5 ppt
+	bindsym Left resize shrink width 5 px or 2 ppt
+	bindsym Down resize grow height 5 px or 2 ppt
+	bindsym Up resize shrink height 5 px or 2 ppt
+	bindsym Right resize grow width 5 px or 2 ppt
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
@@ -144,13 +144,12 @@ for_window [title="Chromium"] border normal 0
 for_window [title="Sublime Text"] border none
 for_window [title="Clementine"] border none
 
-assign [title="Sublime Text"] 2: code
+assign [title="Sublime Text"] 2
 assign [title="Clementine"] 9: listen
 
 # Startup
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 exec --no-startup-id xss-lock -- i3exit lock
-exec --no-startup-id xset s off
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id blueman-applet
