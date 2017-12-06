@@ -141,10 +141,7 @@ for_window [title="Wunderlist$"] floating enable
 for_window [title="Wunderlist$"] move to scratchpad
 for_window [window_role="pop-up"] floating enable
 for_window [title="Chromium"] border normal 0
-for_window [title="Sublime Text"] border none
-for_window [title="Clementine"] border none
 
-assign [title="Sublime Text"] 2
 assign [title="Clementine"] 9: listen
 
 # Startup
