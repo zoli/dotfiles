@@ -40,7 +40,6 @@ bindsym $mod+e exec nautilus
 
 bindsym $mod+x kill
 
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -i -dmenu -p '🚀 ' -font 'Consolas 13'"
 bindsym $mod+Tab exec --no-startup-id rofi -show window -font 'Consolas 13'
 
 bindsym $mod+Left focus left
@@ -151,5 +150,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id blueman-applet
 
+exec --no-startup-id i3-msg 'exec albert'
 exec --no-startup-id i3-msg 'exec telegram-desktop'
 exec --no-startup-id i3-msg 'exec clementine'
