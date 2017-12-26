@@ -1,7 +1,0 @@
-rofi.color-enabled: true
-rofi.color-window: argb:f0222222, argb:f01c1c1c, argb:f01c1c1c
-rofi.color-normal: argb:f0222222, argb:f0f8f8f0, argb:f0222222, argb:f0444444, #f8f8f2
-rofi.color-active: argb:f0222222, argb:f02aa198, argb:f0222222, argb:f02aa198, #f8f8f2
-rofi.color-urgent: argb:f0222222, argb:f0f92672, argb:f0222222, argb:f0f92672, #f8f8f2
-
-rofi.fake-transparency: true

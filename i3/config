@@ -150,6 +150,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id blueman-applet
 
+exec --no-startup-id i3-msg 'exec compton'
 exec --no-startup-id i3-msg 'exec albert'
 exec --no-startup-id i3-msg 'exec telegram-desktop'
 exec --no-startup-id i3-msg 'exec clementine'
