@@ -6,15 +6,15 @@
 
 set -g fish_color_git_clean A6E22E
 set -g fish_color_git_branch F92672
-set -g fish_color_git_remote A6E22E
+set -g fish_color_git_remote ffe602
 
 set -g fish_color_git_staged E6DB74
 set -g fish_color_git_conflicted F92672
 set -g fish_color_git_changed 66D9EF
 set -g fish_color_git_untracked $fish_color_normal
 
-set -g fish_prompt_git_remote_ahead_of "↑"
-set -g fish_prompt_git_remote_behind  "↓"
+set -g fish_prompt_git_remote_ahead_of " ↑ "
+set -g fish_prompt_git_remote_behind  " ↓ "
 
 set -g fish_prompt_git_status_staged "● "
 set -g fish_prompt_git_status_conflicted '✘'
