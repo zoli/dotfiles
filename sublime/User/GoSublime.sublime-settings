@@ -1,5 +1,5 @@
 {
-	"shell": ["/bin/zsh", "--login", "-c", "$CMD"],
+	"shell": ["/bin/fish", "--login", "-c", "$CMD"],
 	"autocomplete_suggest_imports": true,
 	"autocomplete_builtins": true,
 	"use_named_imports": true,

@@ -37,8 +37,8 @@
 		".github",
 		"node_modules"
 	],
-	"font_face": "Consolas",
-	"font_size": 15,
+	"font_face": "Meslo LG M",
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
