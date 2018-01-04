@@ -62,7 +62,7 @@ function ___fish_git_print_branch_info
 
     if test -z $branch
         set -l hash (git rev-parse --short HEAD | cut -c 2-)
-        set branch":"$hash
+        set branch ":"$hash
     else
         set remote_info (___fish_git_print_remote_info $branch)
     end
