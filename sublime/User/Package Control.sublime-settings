@@ -26,6 +26,6 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
-		"TypeScript"
+		"Vue Syntax Highlight"
 	]
 }

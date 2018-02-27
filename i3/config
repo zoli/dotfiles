@@ -8,8 +8,8 @@ set $wsp5 5
 set $wsp6 6
 set $wsp7 7
 set $wsp8 8: read
-set $wsp9 9: listen
-set $wsp0 10: watch
+set $wsp9 9
+set $wsp0 10: media
 
 bindsym $mod+1 workspace $wsp1
 bindsym $mod+2 workspace $wsp2
@@ -136,21 +136,19 @@ for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="Telegram"] floating enable
-for_window [title="Wunderlist$"] floating enable
-for_window [title="Wunderlist$"] move to scratchpad
+for_window [class="PomoDoneApp"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [class="Alacritty"] border pixel 1
+for_window [class="wavebox"] floating enable
+for_window [class="GoldenDict"] floating enable
 
-assign [title="Clementine"] 9: listen
+assign [class="Clementine"] $wsp0
 
 # Startup
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
-exec --no-startup-id blueman-applet
-
 exec --no-startup-id i3-msg 'exec compton -b'
+exec --no-startup-id i3-msg 'exec xflux -l 35.728732785270545 -g 51.36880874633789'
 exec --no-startup-id i3-msg 'exec albert'
-exec --no-startup-id i3-msg 'exec telegram-desktop'
-exec --no-startup-id i3-msg 'exec clementine'
