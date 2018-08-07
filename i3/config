@@ -37,10 +37,9 @@ floating_modifier $mod
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+e exec nautilus
+bindsym $mod+Control+d exec albert
 
 bindsym $mod+x kill
-
-bindsym $mod+Tab exec --no-startup-id rofi -show window -font 'Consolas 13'
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -139,7 +138,7 @@ for_window [class="Telegram"] floating enable
 for_window [class="PomoDoneApp"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [class="Alacritty"] border pixel 1
-for_window [class="wavebox"] floating enable
+for_window [class="crx_ojcflmmmcfpacggndoaaflkmcoblhnbh"] floating enable
 for_window [class="GoldenDict"] floating enable
 
 assign [class="Clementine"] $wsp0
@@ -149,6 +148,6 @@ exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
-exec --no-startup-id i3-msg 'exec compton -b'
+exec --no-startup-id i3-msg 'exec allow_rgb10_configs=false compton -b'
 exec --no-startup-id i3-msg 'exec xflux -l 35.728732785270545 -g 51.36880874633789'
 exec --no-startup-id i3-msg 'exec albert'

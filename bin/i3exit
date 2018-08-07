@@ -1,6 +1,6 @@
 #!/bin/sh
 lock() {
-    i3lock -t -i /home/zoli/Pictures/wallpaper/drak1.png
+    i3lock -t -i /home/zoli/Pictures/screen.png
 }
 
 case "$1" in
