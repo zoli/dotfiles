@@ -3,6 +3,8 @@ set -gx PATH $PATH $HOME/.dotfiles/bin
 set -gx GOPATH $HOME/Code/go
 set -gx EDITOR vim
 
+source ~/.local/share/icons-in-terminal/icons.fish
+
 set __prompt_icons '⚞' '🎩' '🐳' '🐥' '⛵' '🚀' '🌁' '🎪' '🌠' '🎵' '🐉' '🐧'
 set __prompt_icon (random 1 12)
 

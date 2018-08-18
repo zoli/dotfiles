@@ -6,6 +6,7 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"DocBlockr",
 		"Emmet",
 		"Git",
@@ -26,6 +27,7 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
+		"TypeScript",
 		"Vue Syntax Highlight"
 	]
 }
