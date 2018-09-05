@@ -24,7 +24,7 @@
 		"Six",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
-		"SublimeLinter-jshint",
+		"SublimeLinter-eslint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
 		"TypeScript",
