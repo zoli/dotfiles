@@ -13,6 +13,8 @@ fi
 
 xrdb ~/.Xresources
 
+clipit -d
+
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 export DESKTOP_SESSION=gnome
