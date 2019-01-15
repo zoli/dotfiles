@@ -5,9 +5,8 @@ set -gx EDITOR vim
 
 source ~/.local/share/icons-in-terminal/icons.fish
 
-set __prompt_icons $mfizz_ghost $fa_cloud $linux_debian $weather_day_storm_showers $mfizz_splatter $oct_pulse $fa_instagram $fa_opencart $file_electron $weather_lightning $weather_st
-ars
-set __prompt_icon (random 1 11)
+set __prompt_icons $mfizz_ghost $fa_cloud $linux_debian $weather_day_storm_showers $mfizz_splatter $oct_pulse $fa_instagram $fa_opencart $file_electron
+set __prompt_icon (random 1 9)
 
 function fish_prompt
 	set last_status $status
