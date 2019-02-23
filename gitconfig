@@ -12,43 +12,43 @@
 	go = checkout
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [apply]
-    whitespace = fix
+	whitespace = fix
 
 [core]
-    excludesfile = ~/.gitignore
-    attributesfile = ~/.gitattributes
-    whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+	whitespace = space-before-tab,indent-with-non-tab,trailing-space
 
 [color]
-    ui = auto
+	ui = auto
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+	current = yellow reverse
+	local = yellow
+	remote = green
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 [merge]
-    log = true
+	log = true
 
 [url "git@github.com:"]
-    insteadOf = "gh:"
-    pushInsteadOf = "github:"
-    pushInsteadOf = "git://github.com/"
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
 [url "git://github.com/"]
-    insteadOf = "github:"
+	insteadOf = "github:"
 [url "git@gist.github.com:"]
-    insteadOf = "gst:"
-    pushInsteadOf = "gist:"
-    pushInsteadOf = "git://gist.github.com/"
+	insteadOf = "gst:"
+	pushInsteadOf = "gist:"
+	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
-    insteadOf = "gist:"
+	insteadOf = "gist:"
 
 [push]
 	default = simple
@@ -60,5 +60,5 @@
 	from = Mohammad Zolfaghari <zidom72@gmail.com>
 	smtpserver = smtp.gmail.com
 	smtpuser = zidom72@gmail.com
-    smtpserverport = 587
-    smtpencryption = tls
+	smtpserverport = 587
+	smtpencryption = tls
