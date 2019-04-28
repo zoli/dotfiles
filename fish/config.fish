@@ -3,6 +3,12 @@ set -gx PATH $PATH $HOME/.dotfiles/bin
 set -gx GOPATH $HOME/Code/go
 set -gx EDITOR vim
 
+if status is-login
+    if test -z "$DISPLAY" -a $XDG_VTNR = 1
+        exec startx -- -keeptty
+    end
+end
+
 source ~/.local/share/icons-in-terminal/icons.fish
 
 set __prompt_icons $mfizz_ghost $fa_cloud $linux_debian $weather_day_storm_showers $mfizz_splatter $oct_pulse $fa_instagram $fa_opencart $file_electron
