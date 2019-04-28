@@ -1,6 +1,6 @@
 #!/bin/sh
 lock() {
-    i3lock -t -i /home/zoli/Pictures/screen.png
+    i3lock -t -i /home/zoli/Pictures/wallpaper/the-2017-audubon-photography-awards-top17-large.jpg
 }
 
 case "$1" in
