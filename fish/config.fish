@@ -9,10 +9,10 @@ if status is-login
     end
 end
 
-source ~/.local/share/icons-in-terminal/icons.fish
+source /etc/icons-in-terminal/icons.fish
 
-set __prompt_icons $mfizz_ghost $fa_cloud $linux_debian $weather_day_storm_showers $mfizz_splatter $oct_pulse $fa_instagram $fa_opencart $file_electron
-set __prompt_icon (random 1 9)
+set __prompt_icons $mfizz_ghost $file_gitlab $linux_debian $weather_day_storm_showers $mfizz_splatter $file_mirah $fa_instagram $file_blender $file_electron $dev_css_tricks
+set __prompt_icon (random 1 10)
 
 function fish_prompt
 	set last_status $status
