@@ -145,7 +145,7 @@ assign [class="Clementine"] $wsp0
 
 # Startup
 exec --no-startup-id i3-msg 'exec albert'
-exec --no-startup-id clipit -d
+exec --no-startup-id i3-msg 'exec clipit -d'
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id nm-applet
