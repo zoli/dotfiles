@@ -11,6 +11,7 @@ SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_cod:cd\x20\x7e/Code
+SETUVAR _fish_abbr_deploy:git\x20go\x20master\x3b\x20git\x20merge\x20develop\x3b\x20git\x20push\x3b\x20git\x20go\x20develop\x3b\x20git\x20merge\x20master\x3b\x20git\x20push
 SETUVAR _fish_abbr_dls:cd\x20\x7e/Downloads
 SETUVAR _fish_abbr_dot:cd\x20\x7e/\x2edotfiles
 SETUVAR _fish_abbr_ga:git\x20add
@@ -24,12 +25,6 @@ SETUVAR _fish_abbr_pull:git\x20pull
 SETUVAR _fish_abbr_push:git\x20push
 SETUVAR _fish_abbr_s:sudo
 SETUVAR _fish_abbr_v:vim
-SETUVAR _fish_abbr_yain:yaourt\x20\x2dS
-SETUVAR _fish_abbr_yalst:yaourt\x20\x2dQe
-SETUVAR _fish_abbr_yaorph:yaourt\x20\x2dQtd
-SETUVAR _fish_abbr_yarem:yaourt\x20\x2dRns
-SETUVAR _fish_abbr_yaupd:yaourt\x20\x2dSy
-SETUVAR _fish_abbr_yaupg:yaourt\x20\x2dSyua
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:F92672
