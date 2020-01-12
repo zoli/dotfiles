@@ -117,7 +117,7 @@ function ___fish_git_print_remote_info
     set -l remote (____fish_git_remote_info $branch)
     set -l ahead $remote[1]
     set -l behind $remote[2]
-    set -l remote_info
+    set -l remote_info ""
 
 
     if [ $ahead != "0" ]
@@ -137,7 +137,7 @@ end
 function ____fish_git_remote_info
 
     set -l branch $argv[1]
-    set -l remote_name  (git config branch.$branch.remote)
+    set -l remote_name (git config branch.$branch.remote)
 
     if test -n "$remote_name"
         set merge_name (git config branch.$branch.merge)
