@@ -1,0 +1,2 @@
+#!/bin/sh
+fd -g -H -t d -t l -L -E '*go/src/*' '.git' ~/Code/ -x git -C {//} fetch

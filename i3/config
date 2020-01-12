@@ -141,8 +141,6 @@ for_window [class="Alacritty"] border pixel 1
 for_window [class="crx_ojcflmmmcfpacggndoaaflkmcoblhnbh"] floating enable
 for_window [class="GoldenDict"] floating enable
 
-assign [class="Clementine"] $wsp0
-
 # Startup
 exec --no-startup-id i3-msg 'exec albert'
 exec --no-startup-id i3-msg 'exec clipit -d'
@@ -153,3 +151,4 @@ exec --no-startup-id volumeicon
 exec --no-startup-id cbatticon
 exec --no-startup-id i3-msg 'exec allow_rgb10_configs=false compton -b --config ~/.compton.conf'
 exec --no-startup-id i3-msg 'exec xflux -l 35.728732785270545 -g 51.36880874633789'
+exec --no-startup-id i3-msg 'exec fetchall'
