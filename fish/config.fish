@@ -1,6 +1,6 @@
 set fish_greeting ''
 set -gx PATH $PATH $HOME/.dotfiles/bin
-set -gx GOPATH $HOME/Code/go
+set -gx GOPATH $HOME/.go
 set -gx EDITOR vim
 set -g FZF_DEFAULT_COMMAND 'fd -t f'
 set -g FZF_CD_COMMAND 'fd -t d -t l'
