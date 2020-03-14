@@ -1,0 +1,19 @@
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+			{
+				"caption": "File Manager",
+				"id": "side-bar-files-open-with-chrome",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "nautilus",
+					"args":[]
+				}
+			},
+			{"caption":"-"}
+		]
+	}
+]
