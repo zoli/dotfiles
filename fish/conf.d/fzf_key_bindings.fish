@@ -3,6 +3,7 @@ if test "$FZF_LEGACY_KEYBINDINGS" -eq 1
     bind \cr '__fzf_reverse_isearch'
     bind \ec '__fzf_cd'
     bind \eC '__fzf_cd --hidden'
+    bind \cb 'cd $HOME; __fzf_cd'
     bind \cg '__fzf_open'
     bind \co '__fzf_open --editor'
 
