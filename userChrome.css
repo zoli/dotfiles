@@ -1,0 +1,20 @@
+/* Hide tab borders */
+:root {
+	--tabs-border: transparent !important;
+}
+
+/* Remove placeholder right border */
+.titlebar-placeholder {
+	border: none !important;
+}
+
+/* Remove border under navbar */
+#navigator-toolbox::after {
+	border-bottom: 0px !important;
+}
+
+/* tab line - adjust color & size */
+.tab-line {
+	background-color: #0a84ff !important;
+	height: 0px !important;
+}
