@@ -151,7 +151,7 @@ exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id cbatticon
-exec --no-startup-id bidtray
+exec --no-startup-id birdtray
 exec --no-startup-id allow_rgb10_configs=false compton -b --config ~/.compton.conf
 exec --no-startup-id xflux -l 35.728732785270545 -g 51.36880874633789
 exec --no-startup-id fetchall
