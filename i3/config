@@ -37,7 +37,6 @@ floating_modifier $mod
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+e exec nautilus
-bindsym $mod+Control+d exec albert
 
 bindsym $mod+x kill
 
@@ -72,6 +71,7 @@ bindsym $mod+Control+Down move workspace to output down
 bindsym $mod+Control+Up move workspace to output up
 bindsym $mod+Control+Right move workspace to output right
 
+bindsym $mod+Tab workspace back_and_forth
 bindsym Control+Mod1+Right workspace next
 bindsym Control+Mod1+Left workspace prev
 
