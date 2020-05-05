@@ -11,3 +11,5 @@ fish/fishd.*
 
 albert/core.db
 albert/last_used_version
+
+nvim/plugs/*

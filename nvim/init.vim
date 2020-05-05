@@ -1,4 +1,4 @@
-call plug#begin('data')
+call plug#begin('~/.config/nvim/plugs')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -7,7 +7,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go' , { 'do': ':GoUpdateBinaries' }
 Plug 'ncm2/ncm2'
 
 call plug#end()
@@ -69,3 +69,4 @@ au FileType go nmap <Leader>d <Plug>(go-doc)
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+let g:go_echo_command_info = 0
