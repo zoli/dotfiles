@@ -1,22 +1,17 @@
-set nocompatible
-filetype off
+call plug#begin('data')
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/syntastic'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'fatih/vim-go'
+Plug 'ncm2/ncm2'
 
-Plugin 'VundleVim/Vundle.vim'
+call plug#end()
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/syntastic'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'fatih/vim-go'
-Plugin 'ncm2/ncm2'
-
-call vundle#end()            " required
 filetype plugin indent on    " required
 
 set noerrorbells                " No beeps
