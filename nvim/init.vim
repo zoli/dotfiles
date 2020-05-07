@@ -31,6 +31,7 @@ set smartindent
 set noexpandtab
 set tabstop=8
 set shiftwidth=8
+set number
 
 set fileformats=unix,dos,mac    " Prefer Unix over Windows over OS 9 formats
 
@@ -46,10 +47,6 @@ syntax on
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='molokai'
 let g:molokai_original=1
-
-" No toolbars, menu or scrollbars in the GUI
-set guifont=Consolas\ 15
-set clipboard+=unnamed
 
 autocmd FileType c,cpp autocmd BufWritePre <buffer> :%s/\s\+$//e
 
