@@ -9,7 +9,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'fatih/vim-go' , { 'do': ':GoUpdateBinaries' }
 Plug 'ncm2/ncm2'
-Plug 'sickill/vim-monokai'
+Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
@@ -43,7 +43,7 @@ set smartcase                   " ... but not when search pattern contains upper
 set ttyfast
 
 set termguicolors
-colorscheme monokai
+colorscheme molokai
 syntax on
 
 let g:airline_theme='molokai'
