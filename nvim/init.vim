@@ -9,6 +9,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'fatih/vim-go' , { 'do': ':GoUpdateBinaries' }
 Plug 'ncm2/ncm2'
+Plug 'sickill/vim-monokai'
 
 call plug#end()
 
@@ -41,12 +42,11 @@ set ignorecase                  " Search case insensitive...
 set smartcase                   " ... but not when search pattern contains upper case characters
 set ttyfast
 
-colorscheme molokai
+set termguicolors
+colorscheme monokai
 syntax on
 
-let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='molokai'
-let g:molokai_original=1
 
 autocmd FileType c,cpp autocmd BufWritePre <buffer> :%s/\s\+$//e
 
