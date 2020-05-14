@@ -22,8 +22,10 @@ function fish_prompt
 	set_color A6E22E
 	printf $__prompt_icons[$__prompt_icon]'  '
 
-	set_color $fish_color_host
-	printf $USER'@%s ' (prompt_hostname)
+	if test ! $TMUX;
+		set_color $fish_color_host
+		printf $USER'@%s ' (prompt_hostname)
+	end;
 
 	set_color $fish_color_cwd
 	set -l spwd (string split -r -m2 / $PWD)
