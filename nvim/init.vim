@@ -47,6 +47,8 @@ colorscheme molokai
 syntax on
 
 let g:airline_theme='molokai'
+let g:airline_powerline_fonts = 1
+let g:airline_section_y = ''
 
 autocmd FileType c,cpp autocmd BufWritePre <buffer> :%s/\s\+$//e
 
