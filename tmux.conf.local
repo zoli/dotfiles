@@ -61,30 +61,30 @@ tmux_conf_theme_pane_border_style=thin
 
 # pane borders colours:
 tmux_conf_theme_pane_border='#444444'                   # gray
-tmux_conf_theme_pane_active_border='#A6E22E'
+tmux_conf_theme_pane_active_border='#a6e22e'
 
 # pane indicator colours
-tmux_conf_theme_pane_indicator='#A6E22E'
-tmux_conf_theme_pane_active_indicator='#A6E22E'
+tmux_conf_theme_pane_indicator='#a6e22e'
+tmux_conf_theme_pane_active_indicator='#a6e22e'
 
 # status line style
-tmux_conf_theme_message_fg='#000000'                    # black
-tmux_conf_theme_message_bg='#E6DB74'                    # yellow
+tmux_conf_theme_message_fg='#333333'                    # black
+tmux_conf_theme_message_bg='#e6db74'                    # yellow
 tmux_conf_theme_message_attr='bold'
 
 # status line command style (<prefix> : Escape)
-tmux_conf_theme_message_command_fg='#E6DB74'            # yellow
+tmux_conf_theme_message_command_fg='#e6db74'            # yellow
 tmux_conf_theme_message_command_bg='#000000'            # black
 tmux_conf_theme_message_command_attr='bold'
 
 # window modes style
-tmux_conf_theme_mode_fg='#000000'                       # black
-tmux_conf_theme_mode_bg='#E6DB74'                       # yellow
+tmux_conf_theme_mode_fg='#333333'                       # black
+tmux_conf_theme_mode_bg='#e6db74'                       # yellow
 tmux_conf_theme_mode_attr='bold'
 
 # status line style
-tmux_conf_theme_status_fg='#F8F8F2'                     # light gray
-tmux_conf_theme_status_bg='#111111'                     # dark gray
+tmux_conf_theme_status_fg='#f8f8f2'                     # light gray
+tmux_conf_theme_status_bg='#333333'                     # dark gray
 tmux_conf_theme_status_attr='none'
 
 # terminal title
@@ -105,8 +105,8 @@ tmux_conf_theme_terminal_title='#h ❐ #S ● #I #W'
 #     - #{hostname_ssh}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_window_status_fg='#F8F8F2'              # light gray
-tmux_conf_theme_window_status_bg='#111111'              # dark gray
+tmux_conf_theme_window_status_fg='#f8f8f2'              # light gray
+tmux_conf_theme_window_status_bg='#333333'              # dark gray
 tmux_conf_theme_window_status_attr='none'
 tmux_conf_theme_window_status_format='#I #W'
 
@@ -118,8 +118,8 @@ tmux_conf_theme_window_status_format='#I #W'
 #     - #{hostname_ssh}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_window_status_current_fg='#F8F8F2'      # black
-tmux_conf_theme_window_status_current_bg='#66D9EF'      # light blue
+tmux_conf_theme_window_status_current_fg='#333333'      # black
+tmux_conf_theme_window_status_current_bg='#66d9ef'      # light blue
 tmux_conf_theme_window_status_current_attr='bold'
 tmux_conf_theme_window_status_current_format='#I #W'
 
@@ -129,24 +129,20 @@ tmux_conf_theme_window_status_activity_bg='default'
 tmux_conf_theme_window_status_activity_attr='underscore'
 
 # window bell status style
-tmux_conf_theme_window_status_bell_fg='#E6DB74'         # yellow
+tmux_conf_theme_window_status_bell_fg='#e6db74'         # yellow
 tmux_conf_theme_window_status_bell_bg='default'
 tmux_conf_theme_window_status_bell_attr='blink,bold'
 
 # window last status style
-tmux_conf_theme_window_status_last_fg='#66D9EF'         # light blue
+tmux_conf_theme_window_status_last_fg='#66d9ef'         # light blue
 tmux_conf_theme_window_status_last_bg='default'
 tmux_conf_theme_window_status_last_attr='none'
 
 # status left/right sections separators
-tmux_conf_theme_left_separator_main=''
-tmux_conf_theme_left_separator_sub='|'
-tmux_conf_theme_right_separator_main=''
-tmux_conf_theme_right_separator_sub='|'
-#tmux_conf_theme_left_separator_main='\uE0B0'  # /!\ you don't need to install Powerline
-#tmux_conf_theme_left_separator_sub='\uE0B1'   #   you only need fonts patched with
-#tmux_conf_theme_right_separator_main='\uE0B2' #   Powerline symbols or the standalone
-#tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see README.md
+tmux_conf_theme_left_separator_main='\uE0B0'  # /!\ you don't need to install Powerline
+tmux_conf_theme_left_separator_sub='\uE0B1'   #   you only need fonts patched with
+tmux_conf_theme_right_separator_main='\uE0B2' #   Powerline symbols or the standalone
+tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see README.md
 
 # status left/right content:
 #   - separate main sections with '|'
@@ -173,17 +169,17 @@ tmux_conf_theme_right_separator_sub='|'
 #     - #{username}
 #     - #{username_ssh}
 tmux_conf_theme_status_left=''
-tmux_conf_theme_status_right='| #{username}#{root}@#{hostname} '
+tmux_conf_theme_status_right=' #{loadavg} | #{username}#{root}@#{hostname} '
 
 # status left style
-tmux_conf_theme_status_left_fg='#F8F8F2,#F8F8F2,#F8F8F2'  # white, white , white
-tmux_conf_theme_status_left_bg='#E6DB74,#ff00af,#66D9EF'  # yellow, pink, white blue
+tmux_conf_theme_status_left_fg='#f8f8f2,#f8f8f2,#f8f8f2'
+tmux_conf_theme_status_left_bg='#e6db74,#ff00af,#66d9ef'
 tmux_conf_theme_status_left_attr='none,none,none'
 
 # status right style
-tmux_conf_theme_status_right_fg='#8a8a8a,#F8F8F2,#F8F8F2' # light gray, white, black
-tmux_conf_theme_status_right_bg='#F8F8F2,#F8F8F2,#F8F8F2' # dark gray, red, white
-tmux_conf_theme_status_right_attr='none,none,none'
+tmux_conf_theme_status_right_fg='#333333,#333333,#333333'
+tmux_conf_theme_status_right_bg='#e69f66,#fd971f,#fd971f'
+tmux_conf_theme_status_right_attr='none,bold,bold'
 
 # pairing indicator
 tmux_conf_theme_pairing='👓 '          # U+1F453
