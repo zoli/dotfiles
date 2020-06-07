@@ -3,5 +3,11 @@
 	{ "keys": ["ctrl+n"], "command": "new_window" },
 	{ "keys": ["ctrl+tab"], "command": "next_view" },
 	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-	{ "keys": ["alt+v"], "command": "toggle_menu" }
+	{ "keys": ["alt+v"], "command": "toggle_menu" },
+	{ "keys": ["g+d"], "command": "goto_definition" },
+	{
+		"keys": ["g", "d"],
+		"command": "goto_definition",
+		"context": [{"key": "vi_command_mode_aware"}]
+	},
 ]
