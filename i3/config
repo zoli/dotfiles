@@ -131,6 +131,8 @@ bar {
 	}
 }
 
+assign [class="Subl3"] $wsp2
+
 for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable
 for_window [class="Zeal"] floating enable
