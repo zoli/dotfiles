@@ -42,7 +42,9 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Six",
+		"Vintage",
+		"Vintageous"
 	],
 	"indent_guide_options":
 	[
@@ -55,6 +57,7 @@
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
 	"material_theme_tree_headings": false,
+	"neovintageous_build_version": 11100,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
