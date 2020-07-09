@@ -69,3 +69,5 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_echo_command_info = 0
+
+au VimLeave * set guicursor=a:ver25-iCursor
