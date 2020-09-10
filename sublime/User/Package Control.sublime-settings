@@ -22,11 +22,13 @@
 		"QML",
 		"Sass",
 		"SideBarEnhancements",
+		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
 		"SublimeLinter-eslint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
+		"Terminus",
 		"TypeScript",
 		"Vue Syntax Highlight"
 	]
