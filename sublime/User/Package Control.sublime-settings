@@ -14,6 +14,8 @@
 		"GitGutter",
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
+		"LSP",
+		"LSP-vue",
 		"Material Theme",
 		"NeoVintageous",
 		"Package Control",
@@ -28,7 +30,7 @@
 		"SublimeLinter-json",
 		"SublimeLinter-php",
 		"Terminus",
-		"TypeScript",
+		"TypeScript Syntax",
 		"Vue Syntax Highlight"
 	]
 }

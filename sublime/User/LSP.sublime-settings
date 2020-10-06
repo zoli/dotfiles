@@ -1,0 +1,16 @@
+{
+	"auto_show_diagnostics_panel": "never",
+	"only_show_lsp_completions": true,
+	"clients":
+	{
+		"gopls":
+		{
+			"enabled": true
+		},
+		"typescript-language-server":
+		{
+			"enabled": true
+		}
+	},
+	"show_view_status": false
+}
