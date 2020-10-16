@@ -1,11 +1,20 @@
 {
 	"auto_show_diagnostics_panel": "never",
 	"only_show_lsp_completions": true,
+	"lsp_code_actions_on_save": {
+		"source.fixAll": true,
+		"source.organizeImports": true
+	},
 	"clients":
 	{
 		"gopls":
 		{
-			"enabled": true
+			"enabled": true,
+			"settings": {
+				"gopls.usePlaceholders": true,
+				"gopls.completeUnimported": true,
+				"gopls.staticcheck": true
+			}
 		},
 		"typescript-language-server":
 		{
