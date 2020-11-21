@@ -1,6 +1,5 @@
 {
 	"auto_show_diagnostics_panel": "never",
-	"only_show_lsp_completions": true,
 	"lsp_code_actions_on_save": {
 		"source.fixAll": true,
 		"source.organizeImports": true
