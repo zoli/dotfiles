@@ -12,6 +12,8 @@
 		"Emmet",
 		"Git",
 		"GitGutter",
+		"GoImports",
+		"Hooks",
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
 		"LSP",

@@ -2,5 +2,10 @@
 	"extensions":
 	[
 		"go"
+	],
+	"on_pre_save_language": [
+		{
+			"command": "go_imports"
+		}
 	]
 }
