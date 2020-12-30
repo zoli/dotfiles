@@ -1,25 +1,27 @@
 {
 	"auto_show_diagnostics_panel": "never",
-	"lsp_format_on_save": true,
-	"lsp_code_actions_on_save": {
-		"source.fixAll": true,
-		"source.organizeImports": true
-	},
 	"clients":
 	{
 		"gopls":
 		{
 			"enabled": true,
-			"settings": {
-				"gopls.usePlaceholders": true,
+			"settings":
+			{
 				"gopls.completeUnimported": true,
-				"gopls.staticcheck": true
+				"gopls.staticcheck": true,
+				"gopls.usePlaceholders": true
 			}
 		},
 		"typescript-language-server":
 		{
-			"enabled": true
+			"enabled": false
 		}
 	},
+	"lsp_code_actions_on_save":
+	{
+		"source.fixAll": true,
+		"source.organizeImports": true
+	},
+	"lsp_format_on_save": true,
 	"show_view_status": false
 }
