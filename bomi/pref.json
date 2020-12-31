@@ -794,7 +794,7 @@
         "showOnMouseMoved": false,
         "showPreviewOnMouseOverSeekBar": true,
         "showToolOnMouseOverEdge": false,
-        "titleBarEnabled": true
+        "titleBarEnabled": false
     },
     "deinterlacing": {
         "hwdec": {
