@@ -156,7 +156,7 @@ exec --no-startup-id volumeicon
 exec --no-startup-id cbatticon
 exec --no-startup-id birdtray
 exec --no-startup-id gtk-launch NordTray
-exec --no-startup-id telegram-desktop
+exec --no-startup-id telegram-desktop -startintray
 exec --no-startup-id allow_rgb10_configs=false compton -b --config ~/.compton.conf
 exec --no-startup-id xflux -l 35.728732785270545 -g 51.36880874633789
 exec --no-startup-id fetchall
