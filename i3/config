@@ -1,9 +1,9 @@
 set $mod Mod4
 
 set $wsp1 1: www
-set $wsp2 2
+set $wsp2 2: code
 set $wsp3 3: term
-set $wsp4 4
+set $wsp4 4: mail
 set $wsp5 5
 set $wsp6 6
 set $wsp7 7
@@ -132,7 +132,10 @@ bar {
 	}
 }
 
+assign [class="firefox"] $wsp1
 assign [class="Subl3"] $wsp2
+assign [class="Alacritty"] $wsp3
+assign [class="Thunderbird"] $wsp4
 
 for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable
