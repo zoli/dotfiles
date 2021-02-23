@@ -12,6 +12,10 @@
 				"gopls.usePlaceholders": true
 			}
 		},
+		"lsp-vue":
+		{
+			"enabled": false
+		},
 		"typescript-language-server":
 		{
 			"enabled": false
