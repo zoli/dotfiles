@@ -18,7 +18,7 @@
 		},
 		"typescript-language-server":
 		{
-			"enabled": false
+			"enabled": true
 		}
 	},
 	"lsp_code_actions_on_save":

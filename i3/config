@@ -133,7 +133,7 @@ bar {
 }
 
 assign [class="firefox"] $wsp1
-assign [class="Sublime_text"] $wsp2
+assign [class="Subl"] $wsp2
 assign [class="Alacritty"] $wsp3
 assign [class="Thunderbird"] $wsp4
 
@@ -145,7 +145,7 @@ for_window [class="PomoDoneApp"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [class="Alacritty"] border pixel 1
 for_window [class="firefox"] border pixel 0
-for_window [class="Subl3"] border pixel 0
+for_window [class="Subl"] border pixel 0
 for_window [class="crx_ojcflmmmcfpacggndoaaflkmcoblhnbh"] floating enable
 for_window [class="GoldenDict"] floating enable
 
