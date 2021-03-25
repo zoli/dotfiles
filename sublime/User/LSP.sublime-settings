@@ -9,23 +9,19 @@
 			{
 				"gopls.completeUnimported": true,
 				"gopls.staticcheck": true,
-				"gopls.usePlaceholders": true
-			}
+				"gopls.usePlaceholders": true,
+			},
 		},
-		"lsp-vue":
-		{
-			"enabled": false
-		},
-		"typescript-language-server":
+		"LSP-typescript":
 		{
 			"enabled": true
-		}
+		},
 	},
 	"lsp_code_actions_on_save":
 	{
 		"source.fixAll": true,
-		"source.organizeImports": true
+		"source.organizeImports": true,
 	},
 	"lsp_format_on_save": true,
-	"show_view_status": false
+	"show_view_status": false,
 }
