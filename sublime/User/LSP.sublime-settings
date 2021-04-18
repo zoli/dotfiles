@@ -22,6 +22,5 @@
 		"source.fixAll": true,
 		"source.organizeImports": true,
 	},
-	"lsp_format_on_save": true,
 	"show_view_status": false,
 }
