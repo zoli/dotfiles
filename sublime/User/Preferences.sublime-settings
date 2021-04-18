@@ -70,4 +70,5 @@
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
 	"vintageous_use_ctrl_keys": false,
+	"update_check": false,
 }
