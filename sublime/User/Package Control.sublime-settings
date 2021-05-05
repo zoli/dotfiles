@@ -14,6 +14,7 @@
 		"GitGutter",
 		"GoImports",
 		"Hooks",
+		"JsPrettier",
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
 		"LSP",
@@ -34,6 +35,6 @@
 		"SublimeLinter-php",
 		"Terminus",
 		"TypeScript Syntax",
-		"Vue Syntax Highlight"
+		"Vue Syntax Highlight",
 	],
 }
