@@ -4,7 +4,7 @@
 	{
 		"gopls":
 		{
-			"enabled": true,
+			"enabled": false,
 			"settings":
 			{
 				"gopls.completeUnimported": true,
@@ -14,7 +14,11 @@
 		},
 		"LSP-typescript":
 		{
-			"enabled": true
+			"enabled": false,
+		},
+		"LSP-vue":
+		{
+			"enabled": false,
 		},
 	},
 	"lsp_code_actions_on_save":
