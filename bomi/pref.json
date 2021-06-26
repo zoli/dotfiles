@@ -1,6 +1,6 @@
 {
     "app_fixed_font": "DejaVu Sans Mono,12,-1,2,50,0,0,0,0,0",
-    "app_font": "Droid Sans [1ASC],12,-1,5,50,0,0,0,0,0",
+    "app_font": "Droid Sans,12,-1,5,50,0,0,0,0,0",
     "app_locale": {
     },
     "app_log_option": {
@@ -960,7 +960,7 @@
             },
             "font": {
                 "color": "#ffffffff",
-                "qfont": "Droid Sans [1ASC],-1,20,5,50,0,0,0,0,0",
+                "qfont": "Droid Sans,-1,20,5,50,0,0,0,0,0",
                 "size": 0.03
             },
             "outline": {
@@ -1039,7 +1039,7 @@
         "search_paths": [
         ]
     },
-    "sub_autoselect": "Matched",
+    "sub_autoselect": "All",
     "sub_enable_autoselect": true,
     "sub_enc": 2256,
     "sub_enc_accuracy": 70,
@@ -1059,7 +1059,7 @@
         },
         "font": {
             "color": "#ffffffff",
-            "qfont": "Droid Sans [1ASC],-1,20,5,50,0,0,0,0,0",
+            "qfont": "Droid Sans,-1,20,5,50,0,0,0,0,0",
             "size": 0.05
         },
         "outline": {
