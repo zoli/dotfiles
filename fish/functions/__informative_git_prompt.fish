@@ -35,7 +35,7 @@ set -g fish_prompt_git_status_order staged conflicted changed untracked
 
 function __informative_git_prompt --description 'Write out the git prompt'
 
-    set -l is_inside_work_tree (git rev-parse --is-inside-work-tree ^/dev/null )
+    set -l is_inside_work_tree (git rev-parse --is-inside-work-tree 2>/dev/null )
 
     if test -z $is_inside_work_tree
         return
@@ -154,9 +154,9 @@ function ____fish_git_remote_info
         set remote_ref "refs/remotes/$remote_name/$merge_name_short"
     end
 
-    set -l rev_git (eval "git rev-list --left-right $remote_ref...HEAD" ^/dev/null)
+    set -l rev_git (eval "git rev-list --left-right $remote_ref...HEAD" 2>/dev/null)
     if test $status != "0"
-        set rev_git (eval "git rev-list --left-right $merge_name...HEAD" ^/dev/null)
+        set rev_git (eval "git rev-list --left-right $merge_name...HEAD" 2>/dev/null)
     end
 
     for i in $rev_git
