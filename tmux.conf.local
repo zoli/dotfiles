@@ -121,7 +121,7 @@ tmux_conf_theme_window_status_format='#I #W'
 tmux_conf_theme_window_status_current_fg='#333333'      # black
 tmux_conf_theme_window_status_current_bg='#66d9ef'      # light blue
 tmux_conf_theme_window_status_current_attr='bold'
-tmux_conf_theme_window_status_current_format='#I #W'
+tmux_conf_theme_window_status_current_format='#I:#{window_panes} #W'
 
 # window activity status style
 tmux_conf_theme_window_status_activity_fg='default'
@@ -168,13 +168,13 @@ tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see
 #     - #{uptime_s}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_status_left=''
+tmux_conf_theme_status_left=' ❐ #S '
 tmux_conf_theme_status_right=' #{loadavg} | #{username}#{root}@#{hostname} '
 
 # status left style
 tmux_conf_theme_status_left_fg='#f8f8f2,#f8f8f2,#f8f8f2'
-tmux_conf_theme_status_left_bg='#e6db74,#ff00af,#66d9ef'
-tmux_conf_theme_status_left_attr='none,none,none'
+tmux_conf_theme_status_left_bg='#3e3d32,#ff00af,#66d9ef'
+tmux_conf_theme_status_left_attr='bold,none,none'
 
 # status right style
 tmux_conf_theme_status_right_fg='#333333,#333333,#333333'
@@ -221,3 +221,12 @@ set -g mouse on
 #   really you should export VISUAL or EDITOR environment variable, see manual
 #set -g status-keys vi
 #set -g mode-keys vi
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin 'sainnhe/tmux-fzf'
+
+set -g @continuum-restore 'on'
+
+bind C-p run-shell '~/.tmux/plugins/tmux-fzf/scripts/pane.sh switch'
