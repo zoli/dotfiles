@@ -141,9 +141,9 @@ for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="Telegram"] floating enable
-for_window [class="PomoDoneApp"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [class="Alacritty"] border pixel 1
+for_window [class="bomi"] border pixel 2
 for_window [class="firefox"] border pixel 0
 for_window [class="Subl"] border pixel 0
 for_window [class="crx_ojcflmmmcfpacggndoaaflkmcoblhnbh"] floating enable
@@ -160,6 +160,6 @@ exec --no-startup-id cbatticon
 exec --no-startup-id birdtray
 exec --no-startup-id gtk-launch NordTray
 exec --no-startup-id telegram-desktop -startintray
-exec --no-startup-id allow_rgb10_configs=false compton -b --config ~/.compton.conf
+exec --no-startup-id allow_rgb10_configs=false picom -b --config ~/.compton.conf
 exec --no-startup-id xflux -l 35.728732785270545 -g 51.36880874633789
 exec --no-startup-id fetchall
