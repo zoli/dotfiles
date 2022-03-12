@@ -142,6 +142,7 @@ for_window [class="Nautilus"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="Telegram"] floating enable
 for_window [window_role="pop-up"] floating enable
+for_window [class="calculator"] floating enable
 for_window [class="Alacritty"] border pixel 1
 for_window [class="bomi"] border pixel 2
 for_window [class="firefox"] border pixel 0
