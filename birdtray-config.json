@@ -9,7 +9,7 @@
             "path": "/home/zoli/.thunderbird/1w7jvohv.default-release/ImapMail/imappro.zoho.com/INBOX.msf"
         }
     ],
-    "advanced/blinkingusealpha": true,
+    "advanced/blinkingusealpha": false,
     "advanced/forcedRereadInterval": 0,
     "advanced/ignoreUpdateVersion": "1.8.0",
     "advanced/notificationfontmaxsize": 512,
@@ -35,7 +35,7 @@
     "common/hidewhenstarted": true,
     "common/ignoreStartUnreadCount": false,
     "common/launchthunderbird": true,
-    "common/launchthunderbirddelay": 3,
+    "common/launchthunderbirddelay": 1,
     "common/monitorthunderbirdwindow": false,
     "common/newemailEnabled": false,
     "common/notificationfont": "Cantarell,78,-1,5,50,0,0,0,0,0",
