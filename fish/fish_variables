@@ -27,10 +27,11 @@ SETUVAR _fish_abbr_pull:git\x20pull
 SETUVAR _fish_abbr_push:git\x20push
 SETUVAR _fish_abbr_s:sudo
 SETUVAR _fish_abbr_v:vim
-SETUVAR _fisher_fishpkg_2F_fish_2D_humanize_2D_duration_files:/home/zoli/\x2econfig/fish/functions/humantime\x2efish
-SETUVAR _fisher_franciscolourenco_2F_done_files:/home/zoli/\x2econfig/fish/conf\x2ed/done\x2efish
-SETUVAR _fisher_jethrokuan_2F_fzf_files:/home/zoli/\x2econfig/fish/functions/__fzf_cd\x2efish\x1e/home/zoli/\x2econfig/fish/functions/__fzf_complete\x2efish\x1e/home/zoli/\x2econfig/fish/functions/__fzf_complete_preview\x2efish\x1e/home/zoli/\x2econfig/fish/functions/__fzf_find_file\x2efish\x1e/home/zoli/\x2econfig/fish/functions/__fzf_get_dir\x2efish\x1e/home/zoli/\x2econfig/fish/functions/__fzf_open\x2efish\x1e/home/zoli/\x2econfig/fish/functions/__fzf_parse_commandline\x2efish\x1e/home/zoli/\x2econfig/fish/functions/__fzf_reverse_isearch\x2efish\x1e/home/zoli/\x2econfig/fish/functions/__fzfcmd\x2efish\x1e/home/zoli/\x2econfig/fish/conf\x2ed/fzf\x2efish
+SETUVAR _fisher_fishpkg_2F_fish_2D_humanize_2D_duration_files:\x7e/\x2econfig/fish/functions/humantime\x2efish
+SETUVAR _fisher_franciscolourenco_2F_done_files:\x7e/\x2econfig/fish/conf\x2ed/done\x2efish
+SETUVAR _fisher_jethrokuan_2F_fzf_files:\x7e/\x2econfig/fish/functions/__fzf_cd\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_complete\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_complete_preview\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_find_file\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_get_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_open\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_parse_commandline\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_reverse_isearch\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzfcmd\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish
 SETUVAR _fisher_plugins:franciscolourenco/done\x1efishpkg/fish\x2dhumanize\x2dduration\x1ejethrokuan/fzf
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:F92672
