@@ -138,15 +138,16 @@ assign [class="Alacritty"] $wsp3
 assign [class="Thunderbird"] $wsp4
 
 for_window [class=".*"] title_format "<b>%title</b>"
-for_window [class="Nautilus"] floating enable
+for_window [class="Nautilus"] floating enable border pixel 0
 for_window [class="Zeal"] floating enable
-for_window [class="Telegram"] floating enable
+for_window [class="Telegram"] floating enable border pixel 0
 for_window [window_role="pop-up"] floating enable
-for_window [class="calculator"] floating enable
+for_window [class="calculator"] floating enable border pixel 0
 for_window [class="Alacritty"] border pixel 1
 for_window [class="bomi"] border pixel 2
 for_window [class="firefox"] border pixel 0
 for_window [class="Subl"] border pixel 0
+for_window [class="albert"] border pixel 0
 for_window [class="crx_ojcflmmmcfpacggndoaaflkmcoblhnbh"] floating enable
 for_window [class="GoldenDict"] floating enable
 
