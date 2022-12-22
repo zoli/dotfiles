@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/zoli/.gtkrc-2.0.mine"
-gtk-theme-name="WhiteSur-Light"
+#gtk-theme-name="WhiteSur-Light"
 gtk-icon-theme-name="Papirus"
 gtk-cursor-theme-name="Bibata-Modern-Classic"
 gtk-cursor-theme-size=0
