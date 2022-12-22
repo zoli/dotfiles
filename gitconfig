@@ -66,3 +66,5 @@
 [pull]
 	rebase = true
 	ff = only
+[safe]
+	directory = /opt/flutter

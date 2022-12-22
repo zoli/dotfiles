@@ -139,6 +139,7 @@ assign [class="Thunderbird"] $wsp4
 
 for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable border pixel 0
+for_window [class="Nemo"] floating enable border pixel 0
 for_window [class="Zeal"] floating enable
 for_window [class="Telegram"] floating enable border pixel 0
 for_window [window_role="pop-up"] floating enable
@@ -164,3 +165,5 @@ exec --no-startup-id telegram-desktop -startintray
 exec --no-startup-id allow_rgb10_configs=false picom -b --config ~/.compton.conf
 exec --no-startup-id xflux -l 35.728732785270545 -g 51.36880874633789
 exec --no-startup-id fetchall
+exec --no-startup-id syncthingtray
+exec --no-startup-id goldendict
