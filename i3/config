@@ -119,7 +119,7 @@ mode "$mode_system" {
 }
 
 bar {
-	position top
+	position bottom
 	status_command $HOME/.config/i3/conky-i3bar
 	font pango:Consolas bold 11
 	colors {
