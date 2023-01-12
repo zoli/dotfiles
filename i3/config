@@ -1,7 +1,7 @@
 set $mod Mod4
 
 set $wsp1 1: www
-set $wsp2 2: code
+set $wsp2 2: edit
 set $wsp3 3: term
 set $wsp4 4: mail
 set $wsp5 5: read
@@ -133,9 +133,9 @@ bar {
 }
 
 assign [class="firefox"] $wsp1
-assign [class="Subl"] $wsp2
+assign [class="subl"] $wsp2
 assign [class="Alacritty"] $wsp3
-assign [class="Thunderbird"] $wsp4
+assign [class="thunderbird"] $wsp4
 
 for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable border pixel 0
@@ -155,7 +155,7 @@ for_window [class="GoldenDict"] floating enable
 # Startup
 exec --no-startup-id albert
 exec --no-startup-id clipster -d
-exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/Desktop/*
 exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
