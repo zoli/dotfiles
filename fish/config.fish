@@ -13,8 +13,8 @@ end
 
 source /usr/share/icons-in-terminal/icons.fish
 
-set __prompt_icons $mfizz_ghost $file_gitlab $linux_debian $weather_day_storm_showers $mfizz_splatter $file_mirah $fa_instagram $file_electron
-set __prompt_icon (random 1 8)
+set __prompt_icons $mfizz_ghost $file_gitlab $linux_debian $weather_day_storm_showers $mfizz_splatter $file_mirah $file_electron $fa_firefox $fa_google_wallet $fa_qq $mfizz_docker $mfizz_redhat $file_sage $mfizz_tomcat $file_gnu
+set __prompt_icon (random 1 15)
 
 function fish_prompt
 	set last_status $status
