@@ -1,6 +1,6 @@
 #!/bin/sh
 lock() {
-    i3lock -t -i /home/zoli/Pictures/wallpaper/the-2017-audubon-photography-awards-top17-large.png -n; feh --randomize --bg-fill ~/Pictures/wallpaper/*; fetchall
+    i3lock -t -i /home/zoli/Pictures/wallpaper/Desktop/the-2017-audubon-photography-awards-top17-large.png -n; feh --randomize --bg-fill ~/Pictures/wallpaper/Desktop/*; fetchall
 }
 
 case "$1" in
