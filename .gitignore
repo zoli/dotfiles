@@ -9,7 +9,7 @@ mlterm/challenge
 
 fish/fishd.*
 
-albert/core.db
+albert/albert.db
 albert/last_used_version
 albert/QtProject.conf
 albert/org.albert.extension.kvstore/

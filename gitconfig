@@ -68,3 +68,5 @@
 	ff = only
 [safe]
 	directory = /opt/flutter
+[hub]
+	protocol = https

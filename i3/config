@@ -1,7 +1,7 @@
 set $mod Mod4
 
 set $wsp1 1: www
-set $wsp2 2: edit
+set $wsp2 2: code
 set $wsp3 3: term
 set $wsp4 4: mail
 set $wsp5 5: read
