@@ -67,9 +67,9 @@
 	"translate_tabs_to_spaces": false,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintageous_use_ctrl_keys": true,
 	"vintageous_exit_when_quiting_last_window": false,
 	"update_check": false,
 	"auto_complete": true,
 	"vintageous_use_sys_clipboard": true,
+	"relative_line_numbers": true,
 }

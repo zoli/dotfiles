@@ -14,8 +14,19 @@
 		"command": "lsp_symbol_definition",
 		"context": [{"key": "vi_command_mode_aware"}]
 	},
+	{ "keys": ["g+t"], "command": "lsp_symbol_type_definition" },
+	{
+		"keys": ["g", "t"],
+		"command": "lsp_symbol_type_definition",
+		"context": [{"key": "vi_command_mode_aware"}]
+	},
+	{ "keys": ["g+r"], "command": "lsp_symbol_references" },
+	{
+		"keys": ["g", "r"],
+		"command": "lsp_symbol_references",
+		"context": [{"key": "vi_command_mode_aware"}]
+	},
 	{ "keys": ["ctrl+k", "ctrl+m"], "command": "toggle_minimap" },
-
 	{
 		"keys": ["ctrl+up"],
 		"command": "emmet_increment_number",
