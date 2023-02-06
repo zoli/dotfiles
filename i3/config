@@ -136,6 +136,7 @@ assign [class="firefox"] $wsp1
 assign [class="subl"] $wsp2
 assign [class="Alacritty"] $wsp3
 assign [class="thunderbird"] $wsp4
+assign [class="discord"] $wsp4
 
 for_window [class=".*"] title_format "<b>%title</b>"
 for_window [class="Nautilus"] floating enable border pixel 0
@@ -151,10 +152,11 @@ for_window [class="Subl"] border pixel 0
 for_window [class="albert"] border pixel 0
 for_window [class="crx_ojcflmmmcfpacggndoaaflkmcoblhnbh"] floating enable
 for_window [class="GoldenDict"] floating enable
+for_window [class="copyq"] floating enable
 
 # Startup
 exec --no-startup-id albert
-exec --no-startup-id clipster -d
+exec --no-startup-id copyq
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/Desktop/*
 exec --no-startup-id xss-lock -- i3exit lock
 exec --no-startup-id nm-applet
