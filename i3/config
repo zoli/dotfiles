@@ -133,7 +133,7 @@ bar {
 }
 
 assign [class="firefox"] $wsp1
-assign [class="subl"] $wsp2
+assign [class="Subl"] $wsp2
 assign [class="Alacritty"] $wsp3
 assign [class="thunderbird"] $wsp4
 assign [class="discord"] $wsp4

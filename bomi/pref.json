@@ -799,7 +799,7 @@
     "deinterlacing": {
         "hwdec": {
             "doubler": false,
-            "method": "None",
+            "method": "Bob",
             "processor": "GPU"
         },
         "swdec": {
@@ -960,7 +960,7 @@
             },
             "font": {
                 "color": "#ffffffff",
-                "qfont": "Droid Sans,-1,20,5,50,0,0,0,0,0",
+                "qfont": "Droid Sans [1ASC],-1,20,5,50,0,0,0,0,0",
                 "size": 0.03
             },
             "outline": {
@@ -1059,7 +1059,7 @@
         },
         "font": {
             "color": "#ffffffff",
-            "qfont": "Droid Sans,-1,20,5,50,0,0,0,0,0",
+            "qfont": "Droid Sans [1ASC],-1,20,5,50,0,0,0,0,0",
             "size": 0.05
         },
         "outline": {
@@ -1109,6 +1109,6 @@
     "yt_container": "webm",
     "yt_fps": 0,
     "yt_height": 720,
-    "yt_program": "youtube-dl",
+    "yt_program": "yt-dlp",
     "yt_user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)"
 }
