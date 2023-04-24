@@ -1,0 +1,163 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+${custom.random_icon}\
+$all\
+$fill\
+$time\
+$line_break\
+$character
+"""
+
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+style = "bold bright-black"
+format = "[$time]($style)"
+
+[character]
+success_symbol = '[➜](bold green)'
+
+[battery]
+disabled = true
+
+[directory]
+truncation_length = 2
+truncate_to_repo = false
+
+[git_branch]
+style = 'bold #fd971f'
+
+[custom.random_icon]
+command = 'echo $__prompt_icons[$__prompt_icon]'
+when = true
+style = 'green'
+format = '[$symbol($output )]($style) '
+
+[package]
+format = ''
+
+[bun]
+format = ''
+
+[buf]
+format = ''
+
+[cmake]
+format = ''
+
+[cobol]
+format = ''
+
+[crystal]
+format = ''
+
+[daml]
+format = ''
+
+[dart]
+format = ''
+
+[deno]
+format = ''
+
+[dotnet]
+format = ''
+
+[elixir]
+format = ''
+
+[elm]
+format = ''
+
+[erlang]
+format = ''
+
+[fennel]
+format = ''
+
+[golang]
+format = ''
+
+[gradle]
+format = ''
+
+[haxe]
+format = ''
+
+[helm]
+format = ''
+
+[java]
+format = ''
+
+[julia]
+format = ''
+
+[kotlin]
+format = ''
+
+[lua]
+format = ''
+
+[meson]
+format = ''
+
+[nim]
+format = ''
+
+[nodejs]
+format = ''
+
+[ocaml]
+format = ''
+
+[opa]
+format = ''
+
+[perl]
+format = ''
+
+[php]
+format = ''
+
+[pulumi]
+format = ''
+
+[purescript]
+format = ''
+
+[python]
+format = ''
+
+[raku]
+format = ''
+
+[red]
+format = ''
+
+[rlang]
+format = ''
+
+[ruby]
+format = ''
+
+[rust]
+format = ''
+
+[swift]
+format = ''
+
+[vagrant]
+format = ''
+
+[vlang]
+format = ''
+
+[zig]
+format = ''
