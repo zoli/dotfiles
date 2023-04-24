@@ -256,7 +256,7 @@ if set -q __done_enabled
                     end
                 end
 
-                notify-send --urgency=$urgency --icon=utilities-terminal --app-name=fish "$title" "$message"
+                notify-send --hint=int:transient:1 --urgency=$urgency --icon=utilities-terminal --app-name=fish "$title" "$message"
 
                 if test "$__done_notify_sound" -eq 1
                     echo -e "\a" # bell sound
