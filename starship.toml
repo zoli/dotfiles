@@ -21,7 +21,7 @@ style = "bold bright-black"
 format = "[$time]($style)"
 
 [character]
-success_symbol = '[➜](bold green)'
+success_symbol = '[➜](green)'
 
 [battery]
 disabled = true
@@ -29,9 +29,21 @@ disabled = true
 [directory]
 truncation_length = 2
 truncate_to_repo = false
+style = '#fd971f'
 
 [git_branch]
-style = 'bold #fd971f'
+style = '#f92672'
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[git_status]
+format = '($ahead_behind $all_status)'
+ahead = '[↑](yellow) [${count}](bold)'
+behind = '[↓](yellow) [${count}](bold)'
+modified = '[+](bold cyan) [${count}](cyan)'
+untracked = ' …'
+staged = '●'
+up_to_date = '[✔](green)'
+conflicted = '[✘](red)'
 
 [custom.random_icon]
 command = 'echo $__prompt_icons[$__prompt_icon]'
