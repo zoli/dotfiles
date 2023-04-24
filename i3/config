@@ -72,7 +72,8 @@ bindsym $mod+Control+Down move workspace to output down
 bindsym $mod+Control+Up move workspace to output up
 bindsym $mod+Control+Right move workspace to output right
 
-bindsym $mod+Tab workspace back_and_forth
+# bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Tab [con_mark=_back] focus
 bindsym Control+Mod1+Right workspace next
 bindsym Control+Mod1+Left workspace prev
 
@@ -121,7 +122,7 @@ mode "$mode_system" {
 bar {
 	position bottom
 	status_command $HOME/.config/i3/conky-i3bar
-	font pango:Consolas bold 11
+	font pango:Consolas ligaturized v3 bold 11
 	colors {
 		statusline #AAAAAA
 		background $gray2
@@ -169,3 +170,4 @@ exec --no-startup-id xflux -l 35.728732785270545 -g 51.36880874633789
 exec --no-startup-id fetchall
 exec --no-startup-id syncthingtray
 exec --no-startup-id goldendict
+exec --no-startup-id i3-back

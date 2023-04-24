@@ -56,7 +56,7 @@
 [credential]
 	helper = /usr/lib/git-core/git-credential-libsecret
 [cola]
-	fontdiff = Meslo LG M,11,-1,5,50,0,0,0,0,0
+	fontdiff = Consolas ligaturized v3,11,-1,5,50,0,0,0,0,0
 [sendemail]
 	from = Mohammad Zolfaghari <zidom72@gmail.com>
 	smtpserver = smtp.gmail.com
