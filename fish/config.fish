@@ -13,8 +13,8 @@ end
 
 source /usr/share/icons-in-terminal/icons.fish
 
-set __prompt_icons $mfizz_ghost $file_gitlab $linux_debian $weather_day_storm_showers $mfizz_splatter $file_electron $fa_firefox $fa_google_wallet $mfizz_docker $mfizz_redhat
-set __prompt_icon (math (date +%d) % 10)
+set __prompt_icons $mfizz_ghost $file_gitlab $linux_debian $weather_day_storm_showers $mfizz_splatter $file_electron $fa_firefox $mfizz_docker $mfizz_redhat
+set __prompt_icon (math (date +%d) % 9 + 1)
 
 
 starship init fish | source

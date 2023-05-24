@@ -37,7 +37,7 @@
 		"node_modules"
 	],
 	"font_face": "Consolas ligaturized v3",
-	"font_size": 15,
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
