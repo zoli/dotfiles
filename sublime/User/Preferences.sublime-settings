@@ -41,6 +41,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"NeoVintageous",
 		"Six",
 		"Vintage",
 		"Vintageous",
@@ -56,7 +57,7 @@
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
 	"material_theme_tree_headings": false,
-	"neovintageous_build_version": 12700,
+	"neovintageous_build_version": 13200,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -71,4 +72,5 @@
 	"update_check": false,
 	"auto_complete": true,
 	"vintageous_use_sys_clipboard": true,
+	"vintageous_use_super_keys": false,
 }
