@@ -43,14 +43,6 @@ local plugins = {
 
 	-- Install a plugin
 	{
-		"max397574/better-escape.nvim",
-		event = "InsertEnter",
-		config = function()
-			require("better_escape").setup()
-		end,
-	},
-
-	{
 		"mg979/vim-visual-multi",
 		branch = "master",
 		lazy = false,
@@ -95,38 +87,13 @@ local plugins = {
 		"folke/todo-comments.nvim",
 		lazy = false,
 		dependencies = { "nvim-lua/plenary.nvim" },
-		opts = {},
 	},
 
 	{
 		"FotiadisM/tabset.nvim",
 		lazy = false,
 		config = function()
-			require("tabset").setup({
-				defaults = {
-					tabwidth = 8,
-					expandtab = false,
-				},
-				languages = {
-					rust = {
-						tabwidth = 2,
-						expandtab = true,
-					},
-					{
-						filetypes = { "javascript", "typescript", "vue" },
-						config = {
-							tabwidth = 4,
-						},
-					},
-					{
-						filetypes = { "dart", "lua", "json", "yaml", "toml" },
-						config = {
-							tabwidth = 2,
-							expandtab = true,
-						},
-					},
-				},
-			})
+			require("custom.configs.tabset")
 		end,
 	},
 
@@ -145,34 +112,12 @@ local plugins = {
 				desc = "Format buffer",
 			},
 		},
-		opts = {
-			formatters_by_ft = {
-				lua = { "stylua" },
-				go = { "goimports" },
-				rust = { "rustfmt" },
-				dart = { "dart_format" },
-				typescript = { "deno_fmt" },
-				vue = { "prettier" },
-				-- javascript = { "deno_fmt" },
-				json = { "deno_fmt" },
-				["*"] = { "trim_whitespace" },
-			},
-			format_on_save = {
-				timeout_ms = 750,
-				lsp_fallback = true,
-			},
-			-- formatters = {
-			--   deno_fmt = {
-			--     prepend_args = { "--use-tabs" },
-			--   },
-			-- },
-		},
+		opts = overrides.conform,
 	},
 
 	{
 		"stevearc/aerial.nvim",
 		lazy = false,
-		opts = {},
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter",
 			"nvim-tree/nvim-web-devicons",
@@ -213,6 +158,15 @@ local plugins = {
 	{
 		"folke/neoconf.nvim",
 		lazy = false,
+	},
+
+	{
+		"kylechui/nvim-surround",
+		lazy = false,
+		version = "*",
+		config = function()
+			require("nvim-surround").setup({})
+		end,
 	},
 
 	-- To make a plugin not be loaded

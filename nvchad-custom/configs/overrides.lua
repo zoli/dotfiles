@@ -56,6 +56,29 @@ M.nvimtree = {
 	},
 }
 
+M.conform = {
+	formatters_by_ft = {
+		lua = { "stylua" },
+		go = { "goimports" },
+		rust = { "rustfmt" },
+		dart = { "dart_format" },
+		typescript = { "deno_fmt" },
+		vue = { "prettier" },
+		-- javascript = { "deno_fmt" },
+		json = { "deno_fmt" },
+		["*"] = { "trim_whitespace" },
+	},
+	format_on_save = {
+		timeout_ms = 750,
+		lsp_fallback = true,
+	},
+	-- formatters = {
+	--   deno_fmt = {
+	--     prepend_args = { "--use-tabs" },
+	--   },
+	-- },
+}
+
 local select_one_or_multi = function(prompt_bufnr)
 	local picker = require("telescope.actions.state").get_current_picker(prompt_bufnr)
 	local multi = picker:get_multi_selection()
