@@ -6,6 +6,14 @@ local plugins = {
 	-- Override plugin definition options
 
 	{
+		"folke/neoconf.nvim",
+		lazy = false,
+		config = function()
+			require("neoconf").setup({})
+		end,
+	},
+
+	{
 		"neovim/nvim-lspconfig",
 		config = function()
 			require("plugins.configs.lspconfig")
@@ -103,7 +111,6 @@ local plugins = {
 		cmd = { "ConformInfo" },
 		keys = {
 			{
-				-- Customize or remove this keymap to your liking
 				"<leader>fm",
 				function()
 					require("conform").format({ async = true, lsp_fallback = true })
@@ -118,6 +125,7 @@ local plugins = {
 	{
 		"stevearc/aerial.nvim",
 		lazy = false,
+		opts = {},
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter",
 			"nvim-tree/nvim-web-devicons",
@@ -128,7 +136,11 @@ local plugins = {
 		"nvimdev/lspsaga.nvim",
 		lazy = false,
 		config = function()
-			require("lspsaga").setup({})
+			require("lspsaga").setup({
+				lightbulb = {
+					enable = false,
+				},
+			})
 		end,
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter",
@@ -153,11 +165,6 @@ local plugins = {
 			vim.keymap.del({ "x", "o" }, "x")
 			vim.keymap.del({ "x", "o" }, "X")
 		end,
-	},
-
-	{
-		"folke/neoconf.nvim",
-		lazy = false,
 	},
 
 	{

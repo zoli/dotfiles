@@ -96,7 +96,7 @@ end
 
 local action_layout = require("telescope.actions.layout")
 M.telescope = {
-	extensions_list = { "themes", "terms", "fzf", "ui-select", "live_grep_args" },
+	extensions_list = { "themes", "terms", "fzf", "ui-select", "live_grep_args", "aerial" },
 	defaults = {
 		path_display = {
 			truncate = 3,
