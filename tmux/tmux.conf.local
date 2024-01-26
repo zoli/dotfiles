@@ -385,18 +385,18 @@ set -g mouse on
 # by default, launching tmux will update tpm and all plugins
 #   - true (default)
 #   - false
-tmux_conf_update_plugins_on_launch=true
+tmux_conf_update_plugins_on_launch=false
 
 # by default, reloading the configuration will update tpm and all plugins
 #   - true (default)
 #   - false
-tmux_conf_update_plugins_on_reload=true
+tmux_conf_update_plugins_on_reload=false
 
 # by default, reloading the configuration will uninstall tpm and plugins when no
 # plugins are enabled
 #   - true (default)
 #   - false
-tmux_conf_uninstall_plugins_on_reload=true
+tmux_conf_uninstall_plugins_on_reload=false
 
 # /!\ the tpm bindings differ slightly from upstream:
 #   - installing plugins: <prefix> + I
@@ -444,4 +444,5 @@ set -g @continuum-restore 'on'
 # "$@"
 # # /!\ do not remove the previous line
 
-bind C-p run-shell '~/.tmux/plugins/tmux-fzf/scripts/pane.sh switch'
+bind C-p run-shell "$TMUX_PLUGIN_MANAGER_PATH/tmux-fzf/scripts/pane.sh switch"
+

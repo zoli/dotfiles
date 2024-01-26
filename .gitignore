@@ -15,3 +15,5 @@ albert/QtProject.conf
 albert/org.albert.extension.kvstore/
 
 nvim/plugs/*
+
+tmux/plugins/*
