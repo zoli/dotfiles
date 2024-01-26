@@ -1,0 +1,16 @@
+(defwidget datemenu [valign halign] (box
+    :valign valign
+    :halign halign
+    :orientation "v"
+    :class "datemenu"
+    :space-evenly false
+    (box
+        :class "calendar-bin widget"
+        (calendar))
+    (box :class "events widget" (events))
+    (box
+        :class "weather-box"
+        :orientation "v"
+        (for place in weather
+             (weather :place place)))
+))
