@@ -30,6 +30,7 @@ local plugins = {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = overrides.treesitter,
+		dependencies = { "luckasRanarison/tree-sitter-hyprlang" },
 	},
 
 	{
@@ -174,6 +175,11 @@ local plugins = {
 		config = function()
 			require("nvim-surround").setup({})
 		end,
+	},
+
+	{
+		"luckasRanarison/tree-sitter-hyprlang",
+		lazy = false,
 	},
 
 	-- To make a plugin not be loaded

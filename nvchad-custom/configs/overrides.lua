@@ -9,9 +9,24 @@ M.treesitter = {
 		"javascript",
 		"typescript",
 		"tsx",
+		"vue",
 		"c",
 		"markdown",
 		"markdown_inline",
+		"hyprlang",
+		"rust",
+		"go",
+		"gomod",
+		"gosum",
+		"bash",
+		"fish",
+		"gitcommit",
+		"gitignore",
+		"json",
+		"make",
+		"regex",
+		"toml",
+		"yaml",
 	},
 	indent = {
 		enable = true,
@@ -37,6 +52,11 @@ M.mason = {
 		-- c/cpp stuff
 		"clangd",
 		"clang-format",
+
+		"rust-analyzer",
+
+		"gopls",
+		"goimports",
 	},
 }
 
