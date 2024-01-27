@@ -1,4 +1,3 @@
-(include "./yuck/windows/desktop.yuck")
 (include "./yuck/windows/notifications.yuck")
 (include "./yuck/windows/osd.yuck")
 (include "./yuck/windows/powermenu.yuck")

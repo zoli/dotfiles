@@ -18,7 +18,7 @@
     :orientation "v"
     :space-evenly false
     :tooltip label
-    :class "button-bin" 
+    :class "button-bin"
     (button
         :class "button"
         :onclick "${EWW_CONFIG_DIR}/scripts/launcher toggle_menu powermenu && ${action}"

@@ -7,7 +7,6 @@
     (box
         :class "calendar-bin widget"
         (calendar))
-    (box :class "events widget" (events))
     (box
         :class "weather-box"
         :orientation "v"

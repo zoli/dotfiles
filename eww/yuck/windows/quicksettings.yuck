@@ -43,8 +43,6 @@
         :space-evenly false
         :hexpand true
         (box
-            (button :onclick "${EWW_CONFIG_DIR}/scripts/launcher config" 
-                    :class "settings" (label :text ""))
             (button :onclick "${EWW_CONFIG_DIR}/scripts/launcher screenlock"
                     :class "lock"     (label :text ""))
             (button :onclick "${EWW_CONFIG_DIR}/scripts/launcher toggle_menu powermenu"
