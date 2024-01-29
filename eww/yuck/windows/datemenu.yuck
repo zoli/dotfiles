@@ -7,9 +7,4 @@
     (box
         :class "calendar-bin widget"
         (calendar))
-    (box
-        :class "weather-box"
-        :orientation "v"
-        (for place in weather
-             (weather :place place)))
 ))

@@ -18,7 +18,6 @@
         (box
             :orientation "v"
             :space-evenly false
-            (label :text {notifications} :visible false)
             (box
                 :visible {arraylength(notifications.notifications) == 0}
                 :space-evenly false
@@ -33,7 +32,7 @@
                 (label
                     :text "Nothing here"))
             (for n in {notifications.notifications}
-                (notification 
+                (notification
                     :onclick "close"
                     :notification n)
             )
@@ -51,8 +50,16 @@
                 (small_toggle_dnd)
                 (small_toggle_mute)
                 (small_toggle_dark_mode))
-            (box 
-                (small_toggle_power)
+            (box
+                ;; (small_toggle_power)
                 (small_toggle_bt)
-                (small_toggle_network))))
+                (small_toggle_network)))
+		(box
+			:class "system"
+			:orientation "h"
+			(sysprogress_cpu)
+			(sysprogress_ram)
+			(sysprogress_temp)
+			(sysprogress_bat)
+		))
 ))

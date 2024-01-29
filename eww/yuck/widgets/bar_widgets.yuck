@@ -151,7 +151,7 @@
         :transition {orientation == "v" ? "slideup" : "slideleft"}
         :control "battery"
         :reveal battery_reveal
-        :visible {battery.availabe}
+        :visible {battery.availabe == true}
         :value {battery.percent}
         :icon {battery.icon}
         :style {battery.state}

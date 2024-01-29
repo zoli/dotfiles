@@ -3,7 +3,6 @@
     :orientation "v"
     :space-evenly false
     :vexpand true
-    (label :text {notifications} :visible false)
     (for n in {notifications.popups}
         (notification
             :onclick "dismiss"

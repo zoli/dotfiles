@@ -1,40 +1,43 @@
-.datemenu{
-    @include floating_widget;
+.datemenu {
+	@include floating_widget;
 
-    .widget{
-        @include widget;
-        margin: $spacing;
-        padding: $spacing;
-    }
+	.widget {
+		@include widget;
+		margin: $spacing;
+		padding: $spacing;
+	}
 
-    .calendar-bin{
-        padding: 1em 2em .4em 2em;
-        @include calendar;
-    }
+	.calendar-bin {
+		padding: 1em 2em .4em 2em;
+		@include calendar;
+	}
 
-    .system{
-        > * {
-            @include widget;
-            margin: $spacing;
-            padding: 5px;
-            min-width:  3.4em;
-            min-height: 3.4em;
-        }
-        circular-progress{
-            background-color: $bg_color;
-            color: $accent;
-            &.battery{
-                &.low{ color: $red }
-            }
-            .icon{ font-size: 1.3em; }
-        }
-    }
+	.system {
+		>* {
+			@include widget;
+			margin: $spacing;
+			padding: 5px;
+			min-width: 3.4em;
+			min-height: 3.4em;
+		}
 
-    .media{
-        @include media($style: 'widget')
-    }
+		circular-progress {
+			background-color: $bg_color;
+			color: $accent;
 
-    .weather{
-        @include weather;
-    }
+			&.battery {
+				&.low {
+					color: $red
+				}
+			}
+
+			.icon {
+				font-size: 1.3em;
+			}
+		}
+	}
+
+	.media {
+		@include media($style: 'widget')
+	}
 }

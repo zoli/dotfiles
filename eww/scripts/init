@@ -7,4 +7,4 @@ eww daemon
 eww open bar
 eww open notifications_popup
 
-$HOME/.config/eww/scripts/myshell/./myshell --eww --file
+$HOME/.config/eww/scripts/myshell/myshell --eww --file
