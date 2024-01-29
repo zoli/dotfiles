@@ -1,17 +1,13 @@
-local lspconfig = require("tabset")
+local tabset = require("tabset")
 
-lspconfig.setup({
+tabset.setup({
 	defaults = {
 		tabwidth = 8,
 		expandtab = false,
 	},
 	languages = {
-		rust = {
-			tabwidth = 2,
-			expandtab = true,
-		},
 		{
-			filetypes = { "javascript", "typescript", "vue" },
+			filetypes = { "html", "javascript", "typescript", "vue", "css", "scss", "yuck" },
 			config = {
 				tabwidth = 4,
 			},

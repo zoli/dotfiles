@@ -4,7 +4,17 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require("lspconfig")
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "clangd", "gopls", "rust_analyzer", "dartls" }
+local servers = {
+	"html",
+	"cssls",
+	"tsserver",
+	"clangd",
+	"gopls",
+	"rust_analyzer",
+	"dartls",
+	"emmet_language_server",
+	"tailwindcss",
+}
 
 lspconfig["volar"].setup({
 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
