@@ -14,4 +14,4 @@ vim.opt.smartindent = true
 vim.opt.tabstop = 8
 vim.opt.softtabstop = 8
 
-vim.opt.guifont = { "Consolas ligaturized v2", ":h14" }
+vim.opt.guifont = { "FiraCode Nerd Font", ":h14" }

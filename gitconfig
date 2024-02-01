@@ -58,7 +58,7 @@
 [credential]
 	helper = /usr/lib/git-core/git-credential-libsecret
 [cola]
-	fontdiff = Consolas ligaturized v3,11,-1,5,50,0,0,0,0,0
+	fontdiff = FiraCode Nerd Font,11,-1,5,50,0,0,0,0,0
 [sendemail]
 	from = Mohammad Zolfaghari <zidom72@gmail.com>
 	smtpserver = smtp.gmail.com
@@ -70,7 +70,6 @@
 	ff = only
 [safe]
 	directory = /opt/flutter
-[hub]
-	protocol = https
+
 [delta]
 	navigate = true
