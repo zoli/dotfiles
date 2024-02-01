@@ -5,7 +5,7 @@
     :vexpand true
     (for n in {notifications.popups}
         (notification
-            :onclick "dismiss"
+            :onclick "close"
             :notification n)
         )
     )

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NUMBER_OF_WORKSPACES=6
+NUMBER_OF_WORKSPACES=10
 
 window_class() {
     echo `hyprctl activewindow -j | jq --raw-output .class`

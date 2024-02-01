@@ -23,7 +23,7 @@
     :focusable true
     :namespace "eww_powermenu"
     :geometry (geometry :width  "100%"
-                        :height "100%"
+                        :height "150%"
                         :anchor "center center")
     (eventbox
         :onclick "${EWW_CONFIG_DIR}/scripts/launcher toggle_menu powermenu"
@@ -45,13 +45,10 @@
     :geometry (geometry :width  "100%"
                         :height "100%"
                         :anchor "top right")
-    (box
-    :space-evenly false
-        (eventbox
-                :hexpand true
-                :onclick "${EWW_CONFIG_DIR}/scripts/launcher toggle_menu quicksettings")
-		(notifications_center :valign "start" :halign "end")
-    ))
+	(eventbox
+		:hexpand true
+		:onclick "${EWW_CONFIG_DIR}/scripts/launcher toggle_menu quicksettings"
+		(notifications_center :valign "start" :halign "end")))
 
 (defwindow notifications_popup
     :monitor 0
