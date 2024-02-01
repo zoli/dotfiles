@@ -6,9 +6,12 @@
 --   command = "tabdo wincmd =",
 -- })
 
+vim.opt.relativenumber = true
+
 vim.opt.expandtab = false
 vim.opt.shiftwidth = 8
 vim.opt.smartindent = true
 vim.opt.tabstop = 8
 vim.opt.softtabstop = 8
-vim.opt.relativenumber = true
+
+vim.opt.guifont = { "Consolas ligaturized v2", ":h14" }

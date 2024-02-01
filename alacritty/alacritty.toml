@@ -58,17 +58,17 @@ TERM = "xterm-256color"
 size = 14
 
 [font.bold]
-family = "IosevkaNF"
+family = "Consolas ligaturized v2"
 
 [font.glyph_offset]
 x = 0
 y = 0
 
 [font.italic]
-family = "IosevkaNF"
+family = "Consolas ligaturized v2"
 
 [font.normal]
-family = "IosevkaNF"
+family = "Consolas ligaturized v2"
 
 [font.offset]
 x = 0
