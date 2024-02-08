@@ -15,7 +15,7 @@
         (box
             :space-evenly false
             (label :class "icon ${media.preferred.name}" :text {media.preferred.icon})
-            (label :text "${media.preferred.artist} - ${media.preferred.title}")
+            (label :limit-width 32 :text "${media.preferred.artist} - ${media.preferred.title}")
         )
     )
 ))

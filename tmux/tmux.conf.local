@@ -446,3 +446,5 @@ set -g @continuum-restore 'on'
 
 bind C-p run-shell "$TMUX_PLUGIN_MANAGER_PATH/tmux-fzf/scripts/pane.sh switch"
 
+bind-key -n C-S-Left swap-window -t -1\; select-window -t -1
+bind-key -n C-S-Right swap-window -t +1\; select-window -t +1
