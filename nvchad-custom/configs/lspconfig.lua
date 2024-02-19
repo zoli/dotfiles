@@ -7,7 +7,7 @@ local lspconfig = require("lspconfig")
 local servers = {
 	"html",
 	"cssls",
-	"tsserver",
+	-- "tsserver",
 	"clangd",
 	"gopls",
 	"rust_analyzer",
@@ -16,18 +16,18 @@ local servers = {
 	"tailwindcss",
 }
 
-lspconfig["volar"].setup({
-	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
-
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
 		on_attach = on_attach,
 		capabilities = capabilities,
 	})
 end
+
+lspconfig["volar"].setup({
+	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
 
 --
 -- lspconfig.pyright.setup { blabla}
