@@ -37,7 +37,7 @@
 	untracked = cyan
 [merge]
 	log = true
-	conflictstyle = diff3
+	conflictStyle = zdiff3
 
 [url "git@github.com:"]
 	insteadOf = "gh:"
@@ -73,3 +73,5 @@
 
 [delta]
 	navigate = true
+[diff]
+	algorithm = histogram
