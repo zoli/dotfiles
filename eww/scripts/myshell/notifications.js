@@ -62,11 +62,14 @@ export const Notifications = GObject.registerClass({
 			}
 			if (!this._dnd || is_from_done) {
 				this._popups.set(notification.id, notification);
+				const proc = Gio.Subprocess.new(['eww', 'open', 'notifications_popup'], Gio.SubprocessFlags.NONE);
 				GLib.timeout_add(GLib.PRIORITY_DEFAULT,
 					time_out > 0 ? time_out : NOTIFICATIONS_BANNER_TIME_OUT,
 					() => {
 						if (!this._popups.has(id)) return;
 						this._popups.delete(notification.id);
+						if (this._popups.size == 0)
+							Gio.Subprocess.new(['eww', 'close', 'notifications_popup'], Gio.SubprocessFlags.NONE);
 						this._sync();
 					}
 				);
@@ -90,6 +93,8 @@ export const Notifications = GObject.registerClass({
 			this._dbus.emit_signal('NotificationClosed', GLib.Variant.new('(uu)', [id, 2]));
 			this._notifications.delete(id);
 			this._popups.delete(id);
+			if (this._popups.size == 0)
+				Gio.Subprocess.new(['eww', 'close', 'notifications_popup'], Gio.SubprocessFlags.NONE);
 			this._sync();
 		}
 
