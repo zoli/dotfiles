@@ -413,6 +413,7 @@ tmux_conf_uninstall_plugins_on_reload=false
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 set -g @plugin 'sainnhe/tmux-fzf'
+set -g @plugin 'MunifTanjim/tmux-suspend'
 
 set -g @continuum-restore 'on'
 
