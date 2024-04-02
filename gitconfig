@@ -74,5 +74,3 @@
 	navigate = true
 [diff]
 	algorithm = histogram
-[http]
-	postBuffer = 524288000

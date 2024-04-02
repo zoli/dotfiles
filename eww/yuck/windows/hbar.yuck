@@ -37,6 +37,7 @@
         :class "righBar"
         :space-evenly false
         :halign "end"
+		(systray :pack-direction "rtl")
         (panel_system_indicators :orientation "h")
         (panel_powermenu)
     )
