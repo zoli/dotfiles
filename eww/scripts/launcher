@@ -23,7 +23,7 @@ function screenlock {
     if [[ $STATE1 ]]; then eww close powermenu1; fi
 
     hyprctl keyword blurls "gtk-layer-shell"
-    swaylock -f -c 000000
+    swaylock -e -f -i $HOME/.dotfiles/wallpaper/Desktop/mountains-1412683.jpg
 }
 
 if [[ $1 == 'pavu'           ]]; then pavucontrol; fi
