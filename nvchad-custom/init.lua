@@ -15,3 +15,7 @@ vim.opt.smartindent = true
 -- vim.opt.softtabstop = 8
 
 vim.opt.guifont = { "FiraCode Nerd Font", ":h14" }
+
+vim.filetype.add({
+	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})

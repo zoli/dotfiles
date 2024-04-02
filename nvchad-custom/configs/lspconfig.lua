@@ -7,7 +7,7 @@ local lspconfig = require("lspconfig")
 local servers = {
 	"html",
 	"cssls",
-	-- "tsserver",
+	"tsserver",
 	"clangd",
 	"gopls",
 	"rust_analyzer",
