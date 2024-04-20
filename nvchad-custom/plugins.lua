@@ -101,14 +101,6 @@ local plugins = {
   },
 
   {
-    "FotiadisM/tabset.nvim",
-    lazy = false,
-    config = function()
-      require("custom.configs.tabset")
-    end,
-  },
-
-  {
     "stevearc/conform.nvim",
     event = { "BufWritePre" },
     cmd = { "ConformInfo" },
@@ -178,6 +170,20 @@ local plugins = {
       require("nvim-surround").setup({})
     end,
   },
+
+  {
+		"nmac427/guess-indent.nvim",
+    lazy = false,
+		config = function()
+			require("guess-indent").setup()
+		end,
+		dependencies = {
+			"FotiadisM/tabset.nvim",
+			config = function()
+				require("custom.configs.tabset")
+			end,
+		},
+	},
 }
 
 return plugins
