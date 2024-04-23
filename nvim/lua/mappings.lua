@@ -9,20 +9,8 @@ map("i", "jk", "<ESC>")
 
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
-map("n", "<leader>/", "")
-map("v", "<leader>/", "")
 map("v", "<leader>ff", "")
 
-map(
-  "v",
-  "<C-/>",
-  "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
-  { desc = "Toggle comment" }
-)
-
-map("n", "<C-/>", function()
-  require("Comment.api").toggle.linewise.current()
-end, { desc = "Toggle comment" })
 map("n", "<C-p>", "<cmd> Telescope find_files <CR>", { desc = "Find files" })
 map("n", "<leader>fw", function()
   require("telescope").extensions.live_grep_args.live_grep_args()

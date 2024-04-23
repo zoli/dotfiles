@@ -17,16 +17,62 @@ return {
 
   {
     "williamboman/mason.nvim",
-    config = function()
-      require "configs.mason"
-    end,
+    opts = {
+      ensure_installed = {
+        -- lua stuff
+        "lua-language-server",
+        "stylua",
+
+        -- web dev stuff
+        "css-lsp",
+        "html-lsp",
+        "typescript-language-server",
+        "deno",
+        "prettier",
+
+        -- c/cpp stuff
+        "clangd",
+        "clang-format",
+
+        "rust-analyzer",
+
+        "gopls",
+        "goimports",
+      },
+    },
   },
 
   {
     "nvim-treesitter/nvim-treesitter",
-    config = function()
-      require "configs.treesitter"
-    end,
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "vue",
+        "c",
+        "markdown",
+        "markdown_inline",
+        "hyprlang",
+        "rust",
+        "go",
+        "gomod",
+        "gosum",
+        "bash",
+        "fish",
+        "gitcommit",
+        "gitignore",
+        "json",
+        "make",
+        "regex",
+        "toml",
+        "yaml",
+      },
+    },
     dependencies = { "luckasRanarison/tree-sitter-hyprlang" },
   },
 
@@ -39,25 +85,22 @@ return {
   },
 
   {
-    "nvim-tree/nvim-tree.lua",
-    lazy = false,
-    config = function()
-      require "configs.nvim-tree"
-    end,
-  },
-
-  {
     "nvim-telescope/telescope.nvim",
-    lazy = false,
-    config = function()
-      require "configs.telescope"
+    opts = function()
+      local conf = require "nvchad.configs.telescope"
+      local options = require "configs.telescope"
+
+      conf.extensions_list = options.extensions_list
+      conf.defaults = options.defaults
+
+      return conf
     end,
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
       "nvim-telescope/telescope-ui-select.nvim",
       "nvim-telescope/telescope-live-grep-args.nvim",
-      'stevearc/dressing.nvim',
+      "stevearc/dressing.nvim",
     },
   },
 
@@ -114,7 +157,6 @@ return {
     lazy = false,
     opts = {},
     dependencies = {
-      "nvim-treesitter/nvim-treesitter",
       "nvim-tree/nvim-web-devicons",
     },
   },
@@ -130,7 +172,6 @@ return {
       }
     end,
     dependencies = {
-      "nvim-treesitter/nvim-treesitter",
       "nvim-tree/nvim-web-devicons",
     },
   },

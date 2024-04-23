@@ -20,16 +20,6 @@ local options = {
     path_display = {
       truncate = 3,
     },
-    vimgrep_arguments = {
-      "rg",
-      "--color=never",
-      "--no-heading",
-      "--with-filename",
-      "--line-number",
-      "--column",
-      "--smart-case",
-      "--trim",
-    },
     layout_config = {
       horizontal = {
         prompt_position = "top",
@@ -54,4 +44,4 @@ local options = {
   },
 }
 
-require("telescope").setup(options)
+return options
