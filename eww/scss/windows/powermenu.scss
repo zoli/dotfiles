@@ -1,5 +1,4 @@
-.background.powermenu{
-    background-color: rgba(0,0,0,0.5);
+.powermenu{
     .content{
         @include floating_widget;
         .user{ @include user; }

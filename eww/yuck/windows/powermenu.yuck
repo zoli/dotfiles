@@ -33,9 +33,6 @@
     :valign "center"
     :orientation "v"
     :space-evenly false
-    ;; (box :orientation "h"
-    ;;     :space-evenly false
-    ;;     (powermenu_clock))
     (box
         :class "power-menu"
         :space-evenly false
