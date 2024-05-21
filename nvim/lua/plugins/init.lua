@@ -138,14 +138,6 @@ return {
   },
 
   {
-    "nvim-treesitter/nvim-treesitter-context",
-    lazy = false,
-    opts = {
-      multiline_threshold = 1,
-    },
-  },
-
-  {
     "folke/todo-comments.nvim",
     lazy = false,
     dependencies = { "nvim-lua/plenary.nvim" },
