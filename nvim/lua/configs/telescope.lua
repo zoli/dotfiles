@@ -18,7 +18,7 @@ local options = {
   extensions_list = { "themes", "terms", "fzf", "ui-select", "live_grep_args", "aerial" },
   defaults = {
     path_display = {
-      truncate = 3,
+      shorten = { len = 3, exclude = { -1, -2 } },
     },
     layout_config = {
       horizontal = {
