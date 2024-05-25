@@ -5,7 +5,7 @@
     :exclusive true
     :stacking "fg"
     :namespace "eww_bar"
-    :geometry (geometry :width "100%"
+    :geometry (geometry :width "135%"
                         :height "1%"
                         :anchor "top center")(hbar))
 
