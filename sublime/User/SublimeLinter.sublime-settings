@@ -1,8 +1,0 @@
-// SublimeLinter Settings - User
-{
-	"linters": {
-		"jshint": {
-			"excludes": ["*/*.vue"]
-		}
-	}
-}

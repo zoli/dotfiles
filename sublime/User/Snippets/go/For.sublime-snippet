@@ -1,9 +1,0 @@
-<snippet>
-	<description>For range</description>
-	<content><![CDATA[for ${5:i}, ${4:${1:item}} := range ${2:${1:item}s} {
-	${6:/* loop */}
-}
-]]></content>
-	<tabTrigger>for</tabTrigger>
-	<scope>source.go</scope>
-</snippet>
