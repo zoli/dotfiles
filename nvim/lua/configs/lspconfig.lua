@@ -7,13 +7,31 @@ local lspconfig = require "lspconfig"
 local servers = {
   "html",
   "cssls",
-  "tsserver",
   "clangd",
   "gopls",
   "rust_analyzer",
   "dartls",
   "emmet_language_server",
   "tailwindcss",
+}
+
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  init_options = {
+    plugins = {
+      {
+        name = "@vue/typescript-plugin",
+        location = "/usr/lib/node_modules/@vue/typescript-plugin",
+        languages = { "javascript", "typescript", "vue" },
+      },
+    },
+  },
+  capabilities = capabilities,
+  filetypes = {
+    "javascript",
+    "typescript",
+    "vue",
+  },
 }
 
 -- lsps with default config
@@ -24,17 +42,3 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-
--- typescript
-lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  on_init = on_init,
-  capabilities = capabilities,
-}
-
-lspconfig.volar.setup {
-  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
-  on_attach = on_attach,
-  on_init = on_init,
-  capabilities = capabilities,
-}
