@@ -86,9 +86,26 @@ return {
         "regex",
         "toml",
         "yaml",
+        "dart",
+        "dockerfile",
+        "diff",
+        "yuck",
       },
     },
-    dependencies = { "luckasRanarison/tree-sitter-hyprlang" },
+    dependencies = {
+      "luckasRanarison/tree-sitter-hyprlang",
+      {
+        "JoosepAlviste/nvim-ts-context-commentstring",
+        init = function()
+          vim.g.skip_ts_context_commentstring_module = true
+        end,
+        opts = {
+          config = {
+            dart = { __default = "// %s", __multiline = "/* %s */" },
+          },
+        },
+      },
+    },
   },
 
   {
