@@ -28,5 +28,8 @@ set mfizz_splatter 󰌽
 set __prompt_icons $mfizz_ghost $file_gitlab $linux_debian $weather_day_storm_showers $mfizz_splatter $file_electron $fa_firefox $mfizz_docker $mfizz_redhat
 set __prompt_icon (math (date +%d) % 9 + 1)
 
+atuin init fish | source
+starship init fish | source
 
-mcfly init fish | starship init fish | source
+# Created by `pipx` on 2024-09-26 19:24:32
+set PATH $PATH /home/zoli/.local/bin
