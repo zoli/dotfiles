@@ -241,4 +241,19 @@ return {
       end,
     },
   },
+
+  {
+    "inkarkat/vim-EnhancedJumps",
+    branch = "master",
+    lazy = false,
+    dependencies = { "inkarkat/vim-ingo-library" },
+  },
+
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    lazy = false,
+    opts = {
+      multiline_threshold = 1,
+    },
+  },
 }
