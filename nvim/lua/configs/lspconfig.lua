@@ -13,6 +13,7 @@ local servers = {
   "dartls",
   "emmet_language_server",
   "tailwindcss",
+  "solidity_ls_nomicfoundation",
 }
 
 lspconfig.ts_ls.setup {

@@ -5,7 +5,7 @@ local options = {
   },
   languages = {
     {
-      filetypes = { "html", "javascript", "typescript", "vue", "css", "scss", "yuck" },
+      filetypes = { "html", "javascript", "typescript", "vue", "css", "scss", "yuck", "typescriptreact", "solidity" },
       config = {
         tabwidth = 4,
       },
