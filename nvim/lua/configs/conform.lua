@@ -6,7 +6,7 @@ local options = {
     dart = { "dart_format" },
     typescript = { "deno_fmt" },
     vue = { "prettier" },
-    -- javascript = { "deno_fmt" },
+    javascript = { "deno_fmt" },
     json = { "deno_fmt" },
     ["*"] = { "trim_whitespace" },
   },
