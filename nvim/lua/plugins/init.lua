@@ -230,9 +230,11 @@ return {
 
   {
     "nmac427/guess-indent.nvim",
-    lazy = false,
+    event = "BufEnter",
     config = function()
-      require("guess-indent").setup()
+      require("guess-indent").setup {
+        override_editorconfig = true,
+      }
     end,
     dependencies = {
       "FotiadisM/tabset.nvim",
@@ -293,10 +295,10 @@ return {
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "canary",
     dependencies = {
-      { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
-      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+      { "zbirenbaum/copilot.lua" },
+      { "nvim-lua/plenary.nvim" },
     },
-    build = "make tiktoken", -- Only on MacOS or Linux
+    build = "make tiktoken",
     opts = {
       debug = true,
     },

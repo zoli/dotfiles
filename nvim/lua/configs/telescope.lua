@@ -13,7 +13,9 @@ local select_one_or_multi = function(prompt_bufnr)
   end
 end
 
+local lga_actions = require "telescope-live-grep-args.actions"
 local action_layout = require "telescope.actions.layout"
+
 local options = {
   extensions_list = { "themes", "terms", "fzf", "ui-select", "live_grep_args", "aerial" },
   defaults = {
@@ -39,6 +41,8 @@ local options = {
       i = {
         ["<M-p>"] = action_layout.toggle_preview,
         ["<CR>"] = select_one_or_multi,
+        ["<C-k>"] = lga_actions.quote_prompt(),
+        ["<C-space>"] = lga_actions.to_fuzzy_refine,
       },
     },
   },
