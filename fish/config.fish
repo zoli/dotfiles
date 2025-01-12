@@ -24,9 +24,13 @@ set fa_firefox 󰈹
 set mfizz_docker \uf21f
 set mfizz_redhat \uef5d
 set mfizz_splatter 󰌽
+set mfizz_dragon 🐉
+set mfizz_skull 💀
+set mfizz_volcano 🌋
+set mfizz_spidernet 🕸️
 
-set __prompt_icons $mfizz_ghost $file_gitlab $linux_debian $weather_day_storm_showers $mfizz_splatter $file_electron $fa_firefox $mfizz_docker $mfizz_redhat
-set __prompt_icon (math (date +%d) % 9 + 1)
+set __prompt_icons $mfizz_ghost $file_gitlab $linux_debian $weather_day_storm_showers $mfizz_splatter $file_electron $fa_firefox $mfizz_docker $mfizz_redhat $mfizz_dragon $mfizz_skull $mfizz_volcano $mfizz_spidernet
+set __prompt_icon (math (date +%d) % 13 + 1)
 
 atuin init fish | source
 starship init fish | source
