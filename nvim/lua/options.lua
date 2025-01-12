@@ -29,3 +29,14 @@ vim.api.nvim_create_user_command("FormatEnable", function()
 end, {
   desc = "Re-enable autoformat-on-save",
 })
+
+vim.api.nvim_create_autocmd("User", {
+  pattern = "TelescopePreviewerLoaded",
+  callback = function()
+    vim.wo.wrap = true
+    vim.o.tabstop = 2
+    vim.o.shiftwidth = 2
+  end,
+})
+
+-- vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/lua_snippets"
