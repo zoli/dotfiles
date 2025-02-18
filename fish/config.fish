@@ -36,4 +36,4 @@ atuin init fish | source
 starship init fish | source
 
 # Created by `pipx` on 2024-09-26 19:24:32
-set PATH $PATH /home/zoli/.local/bin
+set PATH $PATH /home/zoli/.local/bin /home/zoli/.local/share/solana/install/active_release/bin
