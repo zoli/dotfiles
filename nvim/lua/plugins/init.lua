@@ -292,9 +292,10 @@ return {
 
   {
     "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "main",
     dependencies = {
       { "zbirenbaum/copilot.lua" },
-      { "nvim-lua/plenary.nvim" },
+      { "nvim-lua/plenary.nvim", branch = "master" },
     },
     build = "make tiktoken",
     opts = {},

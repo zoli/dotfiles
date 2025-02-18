@@ -6,14 +6,12 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 local on_attach = function(client, bufnr)
   lsp_on_attach(client, bufnr)
 
-  vim.keymap.set("n", "<leader>d", "<Nop>", { buffer = bufnr })
   vim.keymap.set("n", "<leader>Dw", "<Nop>", { buffer = bufnr })
   vim.keymap.set("n", "<leader>Db", "<Nop>", { buffer = bufnr })
   vim.keymap.set("n", "gpd", "<Nop>", { buffer = bufnr })
   vim.keymap.set("n", "gpD", "<Nop>", { buffer = bufnr })
   vim.keymap.set("n", "gr", "<Nop>", { buffer = bufnr })
 
-  vim.keymap.set("n", "<leader>d", "<cmd> Lspsaga show_line_diagnostics <cr>", { buffer = bufnr })
   vim.keymap.set("n", "<leader>Dw", "<cmd> Lspsaga show_workspace_diagnostics <cr>", { buffer = bufnr })
   vim.keymap.set("n", "<leader>Db", "<cmd> Lspsaga show_buf_diagnostics <cr>", { buffer = bufnr })
   vim.keymap.set("n", "gpd", "<cmd> Lspsaga peek_definition <cr>", { buffer = bufnr })
