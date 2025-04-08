@@ -129,3 +129,5 @@ node_modules
 # User
 TASKS
 *.sublime-project
+
+worktree/
