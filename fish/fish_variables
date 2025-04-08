@@ -38,7 +38,7 @@ SETUVAR __fish_classic_git_prompt_initialized:\x1d
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_cod:cd\x20\x7e/Code
 SETUVAR _fish_abbr_deploy:git\x20go\x20master\x3b\x20git\x20merge\x20develop\x3b\x20git\x20push\x3b\x20git\x20go\x20develop\x3b\x20git\x20merge\x20master\x3b\x20git\x20push
