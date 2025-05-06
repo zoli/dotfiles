@@ -7,6 +7,8 @@ set -gx TMUX_PLUGIN_MANAGER_PATH ~/.config/tmux/plugins/
 set -g FZF_DEFAULT_COMMAND 'fd -t f'
 set -g FZF_CD_COMMAND 'fd -t d -t l'
 
+bind --mode insert \cf forward-char
+
 alias vim=nvim
 
 # if status is-login
