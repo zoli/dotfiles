@@ -6,14 +6,10 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 local on_attach = function(client, bufnr)
   lsp_on_attach(client, bufnr)
 
-  vim.keymap.set("n", "<leader>Dw", "<Nop>", { buffer = bufnr })
-  vim.keymap.set("n", "<leader>Db", "<Nop>", { buffer = bufnr })
   vim.keymap.set("n", "gpd", "<Nop>", { buffer = bufnr })
   vim.keymap.set("n", "gpD", "<Nop>", { buffer = bufnr })
   vim.keymap.set("n", "gr", "<Nop>", { buffer = bufnr })
 
-  vim.keymap.set("n", "<leader>Dw", "<cmd> Lspsaga show_workspace_diagnostics <cr>", { buffer = bufnr })
-  vim.keymap.set("n", "<leader>Db", "<cmd> Lspsaga show_buf_diagnostics <cr>", { buffer = bufnr })
   vim.keymap.set("n", "gpd", "<cmd> Lspsaga peek_definition <cr>", { buffer = bufnr })
   vim.keymap.set("n", "gpD", "<cmd> Lspsaga peek_type_definition <cr>", { buffer = bufnr })
   vim.keymap.set("n", "gr", "<cmd> Telescope lsp_references <cr>", { buffer = bufnr })
@@ -23,10 +19,8 @@ local lspconfig = require "lspconfig"
 local servers = {
   "html",
   "cssls",
-  "clangd",
   "gopls",
   "rust_analyzer",
-  "dartls",
   "emmet_language_server",
   "tailwindcss",
   "solidity_ls_nomicfoundation",
@@ -49,6 +43,11 @@ lspconfig.ts_ls.setup {
     "typescript",
     "vue",
     "typescriptreact",
+  },
+  settings = {
+    completions = {
+      completeFunctionCalls = true,
+    },
   },
 }
 

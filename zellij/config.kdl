@@ -76,6 +76,8 @@ keybinds clear-defaults=true {
         bind "n" { MovePane; }
         bind "p" { MovePaneBackwards; }
         bind "tab" { MovePane; }
+        bind "Alt left" { MoveTab "left"; }
+        bind "Alt right" { MoveTab "right"; }
     }
     scroll {
         bind "Alt left" { MoveFocusOrTab "left"; SwitchToMode "locked"; }
@@ -91,11 +93,19 @@ keybinds clear-defaults=true {
         bind "s" { SwitchToMode "normal"; }
     }
     search {
-        bind "c" { SearchToggleOption "CaseSensitivity"; }
+        bind "Ctrl s" { SwitchToMode "Normal"; }
+        bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
+        bind "j" "Down" { ScrollDown; }
+        bind "k" "Up" { ScrollUp; }
+        bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
+        bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
+        bind "d" { HalfPageScrollDown; }
+        bind "u" { HalfPageScrollUp; }
         bind "n" { Search "down"; }
-        bind "o" { SearchToggleOption "WholeWord"; }
         bind "p" { Search "up"; }
+        bind "c" { SearchToggleOption "CaseSensitivity"; }
         bind "w" { SearchToggleOption "Wrap"; }
+        bind "o" { SearchToggleOption "WholeWord"; }
     }
     session {
         bind "c" {
@@ -144,14 +154,13 @@ keybinds clear-defaults=true {
         }
     }
     shared_except "locked" "renametab" "renamepane" {
-        bind "Ctrl b" { SwitchToMode "locked"; }
         bind "Ctrl q" { Quit; }
     }
     shared_except "locked" "entersearch" {
         bind "enter" { SwitchToMode "locked"; }
     }
     shared_except "locked" "entersearch" "renametab" "renamepane" "prompt" "tmux" {
-        bind "Ctrl b" { SwitchToMode "locked"; }
+        bind "Ctrl b" { Write 2; SwitchToMode "locked"; }
     }
     shared_except "locked" "entersearch" "renametab" "renamepane" {
         bind "esc" { SwitchToMode "locked"; }
@@ -196,13 +205,15 @@ keybinds clear-defaults=true {
         bind "enter" { SwitchToMode "search"; }
     }
     renametab {
-        bind "esc" { UndoRenameTab; SwitchToMode "tab"; }
+        bind "Ctrl c" { SwitchToMode "Normal"; }
+        bind "Esc" { UndoRenameTab; SwitchToMode "Tab"; }
     }
     shared_among "renametab" "renamepane" {
         bind "Ctrl c" { SwitchToMode "locked"; }
     }
     renamepane {
-        bind "esc" { UndoRenamePane; SwitchToMode "pane"; }
+        bind "Ctrl c" { SwitchToMode "Normal"; }
+        bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }
     }
 }
 

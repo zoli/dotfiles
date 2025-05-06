@@ -28,3 +28,6 @@ end)
 map("n", "]e", function()
   require("lspsaga.diagnostic"):goto_next { severity = vim.diagnostic.severity.ERROR }
 end)
+
+map("x", "p", "P")
+map("x", "P", "p")

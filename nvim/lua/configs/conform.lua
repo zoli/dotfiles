@@ -3,12 +3,12 @@ local options = {
     lua = { "stylua" },
     go = { "goimports" },
     rust = { "rustfmt" },
-    dart = { "dart_format" },
     typescript = { "prettier" },
     vue = { "prettier" },
     javascript = { "prettier" },
     json = { "prettier" },
     yaml = { "prettier" },
+    typescriptreact = { "prettier" },
     ["*"] = { "trim_whitespace" },
   },
   format_on_save = function(bufnr)

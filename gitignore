@@ -131,3 +131,5 @@ TASKS
 *.sublime-project
 
 worktree/
+
+.zed/
