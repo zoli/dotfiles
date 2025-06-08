@@ -14,4 +14,6 @@ M.base46 = {
   },
 }
 
+M.ui = {}
+
 return M
